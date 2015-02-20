@@ -1,5 +1,5 @@
 ## Interface: 60000
-## Title: Big Wigs |cff0000ff+|r|cffffffffVoice: Heroes of the Storm|r
+## Title: Big Wigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
 ## LoadOnDemand: 1
 ## Dependencies: BigWigs
 ## LoadWith: BigWigs_Core

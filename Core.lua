@@ -49,11 +49,11 @@ local function registerVoices(mod)
 	})
 end
 
-local name = ...
 local plugin = BigWigs:GetPlugin("Super Emphasize", true)
 if plugin then
 	registerVoices(plugin)
 else
+	local name = ...
 	BigWigs.RegisterMessage(name, "BigWigs_OnPluginEnable", function(_, module)
 		if module.moduleName == "Super Emphasize" then
 			BigWigs.UnregisterMessage(name, "BigWigs_OnPluginEnable")
