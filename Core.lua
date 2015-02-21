@@ -10,12 +10,12 @@ if not plugin then return end
 -- Locale
 --
 
-local L = LibStub("AceLocale-3.0"):NewLocale("Big Wigs: Voices: Heroes of the Storm", "enUS", true)
-L["Voices: Heroes of the Storm"] = true
+local L = LibStub("AceLocale-3.0"):NewLocale("Big Wigs: Voice: Heroes of the Storm", "enUS", true)
+L["Voice: Heroes of the Storm"] = true
 L["Language"] = true
 L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."] = true
 
-L = LibStub("AceLocale-3.0"):GetLocale("Big Wigs: Voices: Heroes of the Storm")
+L = LibStub("AceLocale-3.0"):GetLocale("Big Wigs: Voice: Heroes of the Storm")
 
 -------------------------------------------------------------------------------
 -- Options
@@ -40,10 +40,10 @@ plugin.defaultDB = {
 }
 
 plugin.subPanelOptions = {
-	key = "Big Wigs: Voices: Heroes of the Storm",
-	name = L["Voices: Heroes of the Storm"],
+	key = "Big Wigs: Voice: Heroes of the Storm",
+	name = L["Voice: Heroes of the Storm"],
 	options = {
-		name = L["Voices: Heroes of the Storm"],
+		name = L["Voice: Heroes of the Storm"],
 		type = "group",
 		args = {
 			--[[
