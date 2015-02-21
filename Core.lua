@@ -1,63 +1,158 @@
 
-local function registerVoices(mod)
-	mod:RegisterVoice("English: Heroes: Blackheart", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Blackheart_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Blackheart_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Blackheart_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Blackheart_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Blackheart_Countdown5sec00.ogg",
+-------------------------------------------------------------------------------
+-- Module Declaration
+--
+
+local plugin = BigWigs:NewPlugin("HeroesVoices")
+if not plugin then return end
+
+-------------------------------------------------------------------------------
+-- Locale
+--
+
+local L = LibStub("AceLocale-3.0"):NewLocale("Big Wigs: Voices: Heroes of the Storm", "enUS", true)
+L["Voices: Heroes of the Storm"] = true
+L["Language"] = true
+L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."] = true
+
+L = LibStub("AceLocale-3.0"):GetLocale("Big Wigs: Voices: Heroes of the Storm")
+
+-------------------------------------------------------------------------------
+-- Options
+--
+
+local changed = nil
+local localeMap = {
+	enUS = "English",
+	deDE = "Deutsch",
+	esES = "Español",
+	frFR = "Français",
+	ruRU = "Русский",
+	koKR = "한국어",
+	itIT = "Italiano",
+	ptBR = "Português",
+	zhCN = "简体中文",
+	zhTW = "繁體中文",
+}
+
+plugin.defaultDB = {
+	locale = localeMap[GetLocale()] and GetLocale() or "enUS"
+}
+
+plugin.subPanelOptions = {
+	key = "Big Wigs: Voices: Heroes of the Storm",
+	name = L["Voices: Heroes of the Storm"],
+	options = {
+		name = L["Voices: Heroes of the Storm"],
+		type = "group",
+		args = {
+			--[[
+			header = {
+				name = L["Voices: Heroes of the Storm"],
+				type = "description",
+				fontSize = "medium",
+				order = 1,
+			},
+			--]]
+			locale = {
+				name = L["Language"],
+				type = "select",
+				values = localeMap,
+				get = function() return plugin.db.profile.locale end,
+				set = function(_, value)
+					if plugin.db.profile.locale ~= value then
+						changed = true
+						plugin.db.profile.locale = value
+						plugin:OnPluginEnable()
+					end
+				end,
+				order = 2,
+			},
+			notice = {
+				name = "\n"..L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."],
+				type = "description",
+				hidden = function() return not changed end,
+				order = 3,
+			},
+		},
+	},
+}
+
+-------------------------------------------------------------------------------
+-- Initialization
+--
+
+function plugin:OnPluginEnable()
+	local module = BigWigs:GetPlugin("Super Emphasize", true)
+	if module then
+		self:RegisterVoices(module)
+	else
+		BigWigs:RegisterMessage("BigWigs_OnPluginEnable")
+	end
+end
+
+-------------------------------------------------------------------------------
+-- Event Handlers
+--
+
+function plugin:BigWigs_OnPluginEnable(_, module)
+	if module.moduleName == "Super Emphasize" then
+		self:UnregisterMessage("BigWigs_OnPluginEnable")
+		self:RegisterVoices(module)
+	end
+end
+
+function plugin:RegisterVoices(module)
+	local code = self.db.profile.locale
+	local lang = localeMap[code]
+	-- could localize all of the string, but changes would break sound settings so meh
+
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Blackheart"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown5sec00.ogg",
 	})
 
-	mod:RegisterVoice("English: Heroes: Raven Lord", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\RavenLord_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\RavenLord_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\RavenLord_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\RavenLord_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\RavenLord_Countdown5sec00.ogg",
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Gardens of Terror"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown5sec00.ogg",
 	})
 
-	mod:RegisterVoice("English: Heroes: Snake God", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\SnakeGod_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\SnakeGod_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\SnakeGod_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\SnakeGod_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\SnakeGod_Countdown5sec00.ogg",
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Lady of Thorns"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\LadyofThorns_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\LadyofThorns_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\LadyofThorns_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\LadyofThorns_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\LadyofThorns_Countdown5sec00.ogg",
 	})
 
-	mod:RegisterVoice("English: Heroes: Lady of Thorns", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\LadyofThorns_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\LadyofThorns_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\LadyofThorns_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\LadyofThorns_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\LadyofThorns_Countdown5sec00.ogg",
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Necromancer"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Necromancer_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Necromancer_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Necromancer_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Necromancer_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Necromancer_Countdown5sec00.ogg",
 	})
 
-	mod:RegisterVoice("English: Heroes: Necromancer", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Necromancer_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Necromancer_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Necromancer_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Necromancer_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\Necromancer_Countdown5sec00.ogg",
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Raven Lord"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\RavenLord_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\RavenLord_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\RavenLord_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\RavenLord_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\RavenLord_Countdown5sec00.ogg",
 	})
 
-	mod:RegisterVoice("English: Heroes: Gardens Day", {
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\GardensDayAnnouncer_Countdown1sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\GardensDayAnnouncer_Countdown2sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\GardensDayAnnouncer_Countdown3sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\GardensDayAnnouncer_Countdown4sec00.ogg",
-		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\enUS\\GardensDayAnnouncer_Countdown5sec00.ogg",
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Snake God"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\SnakeGod_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\SnakeGod_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\SnakeGod_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\SnakeGod_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\SnakeGod_Countdown5sec00.ogg",
 	})
 end
 
-local plugin = BigWigs:GetPlugin("Super Emphasize", true)
-if plugin then
-	registerVoices(plugin)
-else
-	local name = ...
-	BigWigs.RegisterMessage(name, "BigWigs_OnPluginEnable", function(_, module)
-		if module.moduleName == "Super Emphasize" then
-			BigWigs.UnregisterMessage(name, "BigWigs_OnPluginEnable")
-			registerVoices(module)
-		end
-	end)
-end

@@ -1,8 +1,11 @@
 ## Interface: 60000
 ## Title: Big Wigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
+## Author: Neb
+## Version: 1.0
 ## LoadOnDemand: 1
 ## Dependencies: BigWigs
 ## LoadWith: BigWigs_Core
 ## X-BigWigs-LoadOn-CoreLoaded: 1
 
+Locales.lua
 Core.lua
