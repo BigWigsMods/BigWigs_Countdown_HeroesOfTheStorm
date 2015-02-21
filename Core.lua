@@ -115,7 +115,7 @@ function plugin:RegisterVoices(module)
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\Blackheart_Countdown5sec00.ogg",
 	})
 
-	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Gardens of Terror"), {
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Queen Nightshade"), {
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown1sec00.ogg",
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown2sec00.ogg",
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..code.."\\GardensDayAnnouncer_Countdown3sec00.ogg",
