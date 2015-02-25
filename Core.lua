@@ -34,9 +34,13 @@ local localeMap = {
 	zhCN = "简体中文",
 	zhTW = "繁體中文",
 }
+local locale = GetLocale()
+if locale == "esMX" then
+	locale = "esES"
+end
 
 plugin.defaultDB = {
-	locale = localeMap[GetLocale()] and GetLocale() or "enUS"
+	locale = localeMap[locale] and locale or "enUS"
 }
 
 plugin.subPanelOptions = {
