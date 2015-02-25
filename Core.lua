@@ -21,7 +21,7 @@ L = LibStub("AceLocale-3.0"):GetLocale("Big Wigs: Voice: Heroes of the Storm")
 -- Options
 --
 
-local changed = nil
+local loaded = {}
 local localeMap = {
 	enUS = "English",
 	deDE = "Deutsch",
@@ -64,18 +64,23 @@ plugin.subPanelOptions = {
 				values = localeMap,
 				get = function() return plugin.db.profile.locale end,
 				set = function(_, value)
-					if plugin.db.profile.locale ~= value then
-						changed = true
-						plugin.db.profile.locale = value
-						plugin:OnPluginEnable()
-					end
+					plugin.db.profile.locale = value
+					plugin:OnPluginEnable()
 				end,
 				order = 2,
 			},
 			notice = {
 				name = "\n"..L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."],
 				type = "description",
-				hidden = function() return not changed end,
+				hidden = function()
+					local count = 0
+					for k,v in next, loaded do 
+						count = count + 1
+					end
+					if count == 1 then
+						return true
+					end
+				end,
 				order = 3,
 			},
 		},
@@ -108,6 +113,8 @@ end
 
 function plugin:RegisterVoices(module)
 	local code = self.db.profile.locale
+	if loaded[code] then return end
+	loaded[code] = true
 	local lang = localeMap[code]
 	-- could localize all of the string, but changes would break sound settings so meh
 
