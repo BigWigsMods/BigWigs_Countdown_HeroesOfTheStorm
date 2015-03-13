@@ -91,25 +91,16 @@ plugin.subPanelOptions = {
 -- Initialization
 --
 
-function plugin:OnPluginEnable()
+function plugin:OnRegister()
 	local module = BigWigs:GetPlugin("Super Emphasize", true)
 	if module then
 		self:RegisterVoices(module)
-	else
-		BigWigs:RegisterMessage("BigWigs_OnPluginEnable")
 	end
 end
 
 -------------------------------------------------------------------------------
 -- Event Handlers
 --
-
-function plugin:BigWigs_OnPluginEnable(_, module)
-	if module.moduleName == "Super Emphasize" then
-		self:UnregisterMessage("BigWigs_OnPluginEnable")
-		self:RegisterVoices(module)
-	end
-end
 
 function plugin:RegisterVoices(module)
 	local code = self.db.profile.locale
