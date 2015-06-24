@@ -1,4 +1,4 @@
-## Interface: 60100
+## Interface: 60200
 ## Title: Big Wigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
 ## Author: Neb
 ## Version: 1.0
