@@ -156,5 +156,21 @@ function plugin:RegisterVoices(module)
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SnakeGod_Countdown4sec00.ogg",
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SnakeGod_Countdown5sec00.ogg",
 	})
+
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Angel"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown5sec00.ogg",
+	})
+
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Demon"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown5sec00.ogg",
+	})
 end
 
