@@ -1,5 +1,14 @@
 ## Interface: 60200
 ## Title: Big Wigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
+## Title-deDE: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="deDE", key="Voice: Heroes of the Storm")@|r
+## Title-esES: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="esES", key="Voice: Heroes of the Storm")@|r
+## Title-frFR: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="frFR", key="Voice: Heroes of the Storm")@|r
+## Title-itIT: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="itIT", key="Voice: Heroes of the Storm")@|r
+## Title-koKR: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="koKR", key="Voice: Heroes of the Storm")@|r
+## Title-ptBR: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="ptBR", key="Voice: Heroes of the Storm")@|r
+## Title-ruRU: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="ruRU", key="Voice: Heroes of the Storm")@|r
+## Title-zhCN: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="zhCN", key="Voice: Heroes of the Storm")@|r
+## Title-zhTW: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="zhTW", key="Voice: Heroes of the Storm")@|r
 ## Author: Neb
 ## Version: 1.0
 ## LoadOnDemand: 1
