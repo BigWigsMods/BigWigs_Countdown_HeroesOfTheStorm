@@ -1,4 +1,4 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: Big Wigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
 ## Title-deDE: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="deDE", key="Voice: Heroes of the Storm")@|r
 ## Title-esES: Big Wigs |cffff7f3f+|r|cffffffff@localization(locale="esES", key="Voice: Heroes of the Storm")@|r
