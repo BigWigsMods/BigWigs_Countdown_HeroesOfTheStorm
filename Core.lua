@@ -161,6 +161,14 @@ function plugin:RegisterVoices()
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SnakeGod_Countdown5sec00.ogg",
 	})
 
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Spider Queen"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SpiderQueen_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SpiderQueen_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SpiderQueen_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SpiderQueen_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\SpiderQueen_Countdown5sec00.ogg",
+	})
+
 	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Angel"), {
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown1sec00.ogg",
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Angel_Countdown2sec00.ogg",
@@ -176,5 +184,20 @@ function plugin:RegisterVoices()
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown4sec00.ogg",
 		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Demon_Countdown5sec00.ogg",
 	})
-end
 
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Adjutant"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Adjutant_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Adjutant_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Adjutant_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Adjutant_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Adjutant_Countdown5sec00.ogg",
+	})
+
+	module:RegisterVoice(("%s: Heroes of the Storm: %s"):format(lang, "Arena Announcer"), {
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Arena_Countdown1sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Arena_Countdown2sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Arena_Countdown3sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Arena_Countdown4sec00.ogg",
+		"Interface\\AddOns\\BigWigs_Voice_HeroesOfTheStorm\\"..locale.."\\Arena_Countdown5sec00.ogg",
+	})
+end
