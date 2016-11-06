@@ -1,3 +1,4 @@
+local _, ns = ...
 
 -------------------------------------------------------------------------------
 -- Module Declaration
@@ -10,12 +11,12 @@ if not plugin then return end
 -- Locale
 --
 
-local L = LibStub("AceLocale-3.0"):NewLocale("Big Wigs: Voice: Heroes of the Storm", "enUS", true)
-L["Voice: Heroes of the Storm"] = true
-L["Language"] = true
-L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."] = true
+local L = {}
+L["Voice: Heroes of the Storm"] = "Voice: Heroes of the Storm"
+L["Language"] = "Language"
+L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."] = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
-L = LibStub("AceLocale-3.0"):GetLocale("Big Wigs: Voice: Heroes of the Storm")
+ns.L = L
 
 -------------------------------------------------------------------------------
 -- Options

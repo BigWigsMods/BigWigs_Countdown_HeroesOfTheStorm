@@ -15,5 +15,5 @@
 ## Dependencies: BigWigs
 ## X-BigWigs-LoadOn-CoreEnabled: 1
 
-Locales.lua
 Core.lua
+Locales.lua
