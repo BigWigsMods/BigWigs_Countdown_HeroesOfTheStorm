@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 70100
 ## Title: BigWigs |cffff7f3f+|r|cffffffffVoice: Heroes of the Storm|r
 ## Title-deDE: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="deDE", key="Voice: Heroes of the Storm")@|r
 ## Title-esES: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="esES", key="Voice: Heroes of the Storm")@|r
@@ -10,7 +10,7 @@
 ## Title-zhCN: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="zhCN", key="Voice: Heroes of the Storm")@|r
 ## Title-zhTW: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="zhTW", key="Voice: Heroes of the Storm")@|r
 ## Author: Neb
-## Version: 1.0
+## Version: @project-version@
 ## LoadOnDemand: 1
 ## Dependencies: BigWigs
 ## X-BigWigs-LoadOn-CoreEnabled: 1
