@@ -40,9 +40,12 @@ if locale == "esMX" then
 	locale = "esES"
 end
 
-plugin.defaultDB = {
-	locale = localeMap[locale] and locale or "enUS"
-}
+do
+	local locale = GetLocale()
+	plugin.defaultDB = {
+		locale = localeMap[locale] and locale or "enUS"
+	}
+end
 
 plugin.subPanelOptions = {
 	key = "Big Wigs: Voice: Heroes of the Storm",
@@ -66,7 +69,7 @@ plugin.subPanelOptions = {
 				get = function() return plugin.db.profile.locale end,
 				set = function(_, value)
 					plugin.db.profile.locale = value
-					plugin:OnPluginEnable()
+					plugin:RegisterVoices()
 				end,
 				order = 2,
 			},
@@ -93,17 +96,17 @@ plugin.subPanelOptions = {
 --
 
 function plugin:OnRegister()
-	local module = BigWigs:GetPlugin("Super Emphasize", true)
-	if module then
-		self:RegisterVoices(module)
-	end
+	self:RegisterVoices()
 end
 
 -------------------------------------------------------------------------------
 -- Event Handlers
 --
 
-function plugin:RegisterVoices(module)
+function plugin:RegisterVoices()
+	local module = BigWigs:GetPlugin("Super Emphasize", true)
+	if not module then return end
+
 	local locale = self.db.profile.locale
 	if loaded[locale] then return end
 	loaded[locale] = true
