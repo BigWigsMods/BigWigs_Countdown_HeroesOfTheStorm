@@ -26,7 +26,8 @@ local loaded = {}
 local localeMap = {
 	enUS = "English",
 	deDE = "Deutsch",
-	esES = "Español",
+	esES = "Español (es)",
+	esMX = "Español (mx)",
 	frFR = "Français",
 	ruRU = "Русский",
 	koKR = "한국어",
@@ -35,10 +36,6 @@ local localeMap = {
 	zhCN = "简体中文",
 	zhTW = "繁體中文",
 }
-local locale = GetLocale()
-if locale == "esMX" then
-	locale = "esES"
-end
 
 do
 	local locale = GetLocale()
