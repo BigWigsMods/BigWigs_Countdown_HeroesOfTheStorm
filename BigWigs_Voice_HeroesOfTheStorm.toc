@@ -11,9 +11,7 @@
 ## Title-zhTW: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="zhTW", key="Voice: Heroes of the Storm")@|r
 ## Author: Neb
 ## Version: @project-version@
-## LoadOnDemand: 1
 ## Dependencies: BigWigs
-## X-BigWigs-LoadOn-CoreEnabled: 1
 
 Core.lua
 Locales.lua
