@@ -1,4 +1,4 @@
--- update at http://www.wowace.com/addons/bigwigs_voice_heroesofthestorm/localization/
+-- update at http://www.wowace.com/projects/bigwigs_countdown_heroesofthestorm/localization/
 
 local _, ns = ...
 local L = ns.L

@@ -1,4 +1,4 @@
-# BigWigs_Voice_HeroesOfTheStorm
+# BigWigs_Countdown_HeroesOfTheStorm
 
 **This addon is a BigWigs plugin and requires BigWigs to run.**
 
@@ -17,4 +17,4 @@ Included:
 Set the language you want to use in the BigWigs options (/bw). The default countdown voice is set in Sounds. You can also enable countdown per ability and change the voice for it in that ability's Sounds tab.
 
 #### Download
-https://mods.curse.com/addons/wow/bigwigs_voice_heroesofthestorm
+https://mods.curse.com/addons/wow/bigwigs_countdown_heroesofthestorm

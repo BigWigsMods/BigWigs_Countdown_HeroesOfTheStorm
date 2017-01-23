@@ -1,0 +1,19 @@
+## Interface: 70100
+## Title: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
+## Title-deDE: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="deDE", key="Countdown: Heroes of the Storm")@|r
+## Title-esES: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="esES", key="Countdown: Heroes of the Storm")@|r
+## Title-frFR: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="frFR", key="Countdown: Heroes of the Storm")@|r
+## Title-itIT: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="itIT", key="Countdown: Heroes of the Storm")@|r
+## Title-koKR: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="koKR", key="Countdown: Heroes of the Storm")@|r
+## Title-ptBR: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="ptBR", key="Countdown: Heroes of the Storm")@|r
+## Title-ruRU: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="ruRU", key="Countdown: Heroes of the Storm")@|r
+## Title-zhCN: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="zhCN", key="Countdown: Heroes of the Storm")@|r
+## Title-zhTW: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="zhTW", key="Countdown: Heroes of the Storm")@|r
+## Author: Neb
+## Version: @project-version@
+## LoadOnDemand: 1
+## Dependencies: BigWigs
+## X-BigWigs-LoadOn-CoreEnabled: 1
+
+Core.lua
+Locales.lua
