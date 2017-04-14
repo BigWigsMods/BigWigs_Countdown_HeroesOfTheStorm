@@ -1,4 +1,4 @@
-## Interface: 70100
+## Interface: 70200
 ## Title: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-deDE: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="deDE", key="Countdown: Heroes of the Storm")@|r
 ## Title-esES: BigWigs |cffff7f3f+|r|cffffffff@localization(locale="esES", key="Countdown: Heroes of the Storm")@|r
