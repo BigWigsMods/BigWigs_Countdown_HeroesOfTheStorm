@@ -126,6 +126,7 @@ end
 --
 
 local announcers = {
+	-- Map
 	Blackheart = "Blackheart",
 	GardensDayAnnouncer = "Queen Nightshade",
 	LadyofThorns = "Lady of Thorns",
@@ -137,6 +138,34 @@ local announcers = {
 	Demon = "Demon",
 	Adjutant = "Adjutant",
 	Arena = "Arena Announcer",
+
+	-- Heroes
+	-- Warcraft
+	AnubarakAnnouncer = "Anub'arak",
+	ArthasA = "Arthas",
+	BrightwingA = "Brightwing",
+	ETCA = "E.T.C.",
+	FalstadA = "Falstad",
+	GazloweA = "Gazlowe",
+	IllidanA = "Illidan",
+	LiLiA = "Li Li",
+	MalfurionA = "Malfurion",
+	MuradinA = "Muradin",
+	MurkyA = "Murky",
+	RehgarAnnouncer = "Rehgar",
+	StitchesA = "Stitches",
+	-- StarCraft
+	Abathur = "Abathur",
+	SiegeTankA = "Sgt. Hammer",
+	TassadarA = "Tassadar",
+	TychusA = "Tychus",
+	ZeratulA = "Zeratul",
+	-- Diablo
+	BarbarianA = "Sonya",
+	--ButcherA = "Butcher", -- ButcherA is just a bunch of the ButcherBase sound files right now (maybe it just grunts/growls for everything? lol)
+	DemonHunterA = "Valla",
+	DiabloA = "Diablo",
+	WitchDoctorA = "Nazeebo",
 }
 
 function ns.RegisterVoices()
