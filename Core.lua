@@ -138,7 +138,7 @@ local announcers = {
 	Demon = "Demon",
 	Adjutant = "Adjutant",
 	Athena = "Athena",
-	Arena = "Arena Announcer",
+	Arena = "Arena",
 	Commodore = "Commodore",
 
 	-- Heroes

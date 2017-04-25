@@ -4,7 +4,7 @@
 
 Adds countdown voices from Heroes of the Storm to BigWigs for all supported locales.
 
-Set the language you want to use in the BigWigs options (`/bw`). The default countdown voice is set in "Sounds". You can also enable countdown per ability and change the voice for it in that ability's "Sounds" tab.
+The language is initially set using your locale. You can change the language in the BigWigs options (`/bw`). The default countdown voice is set in "Sounds". You can also enable countdown per ability and change the voice for it in that ability's "Sounds" tab.
 
 Heroes 2.0 announcers:
 
@@ -23,7 +23,7 @@ And the default announcers:
 - Angel and Demon (Battlefield of Eternity/Infernal Shrines)
 - Adjutant (Braxis Holdout/Warhead Junction)
 - Athena (Hanamura)
-- Arena Announcer (Generic male announcer)
+- Arena/Commodore (Brawl announcers)
 
 
 #### Download
