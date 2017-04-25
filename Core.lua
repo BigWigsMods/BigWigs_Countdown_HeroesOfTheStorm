@@ -137,7 +137,9 @@ local announcers = {
 	Angel = "Angel",
 	Demon = "Demon",
 	Adjutant = "Adjutant",
+	Athena = "Athena",
 	Arena = "Arena Announcer",
+	Commodore = "Commodore",
 
 	-- Heroes
 	-- Warcraft

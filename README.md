@@ -6,7 +6,13 @@ Adds countdown voices from Heroes of the Storm to BigWigs for all supported loca
 
 Set the language you want to use in the BigWigs options (`/bw`). The default countdown voice is set in "Sounds". You can also enable countdown per ability and change the voice for it in that ability's "Sounds" tab.
 
-Included map announcers:
+Heroes 2.0 announcers:
+
+- Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Gazlowe, Illidan, Li Li, Malfurion, Murky, Rehgar, Stitches
+- StarCraft: Abathur, Sgt. Hammer, Tassadar, Tychus, Zeratul
+- Diablo: Sonya, Valla, Diablo, Nazeebo
+
+And the default announcers:
 
 - Blackheart (Blackheart's Bay)
 - Queen Nightshade (Garden of Terror)
@@ -15,13 +21,10 @@ Included map announcers:
 - Raven Lord (Cursed Hallow/Towers of Doom)
 - Snake God (Sky Temple)
 - Angel and Demon (Battlefield of Eternity/Infernal Shrines)
-- Arena Announcer (Brawls)
+- Adjutant (Braxis Holdout/Warhead Junction)
+- Athena (Hanamura)
+- Arena Announcer (Generic male announcer)
 
-And the Heroes 2.0 announcers:
-
-- Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Gazlowe, Illidan, Li Li, Malfurion, Murky, Rehgar, Stitches
-- StarCraft: Abathur, Sgt. Hammer, Tassadar, Tychus, Zeratul
-- Diablo: Sonya, Valla, Diablo, Nazeebo
 
 #### Download
 https://mods.curse.com/addons/wow/bigwigs_countdown_heroesofthestorm
