@@ -164,7 +164,7 @@ local announcers = {
 	ZeratulA = "Zeratul",
 	-- Diablo
 	BarbarianA = "Sonya",
-	--ButcherA = "Butcher", -- ButcherA is just a bunch of the ButcherBase sound files right now (maybe it just grunts/growls for everything? lol)
+	--ButcherA = "Butcher", -- ButcherA is just a bunch of the ButcherBase sound files (grunts/growls)
 	DemonHunterA = "Valla",
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
@@ -188,6 +188,18 @@ function ns.RegisterVoices()
 			path:format(locale, file, 3),
 			path:format(locale, file, 4),
 			path:format(locale, file, 5),
+		})
+	end
+
+	-- Special case Butcher (reversed from HotS so 2/1 are the more distinctive sounds)
+	local butcher = "Heroes of the Storm: Butcher"
+	if not BigWigsAPI:HasCountdown(butcher) then
+		BigWigsAPI:RegisterCountdown(butcher, {
+			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_DismissBark02.ogg",
+			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_Attack08.ogg",
+			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_GetHitSmall02.ogg",
+			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_GetHitSmall01.ogg",
+			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_GetHitSmall04.ogg",
 		})
 	end
 end
