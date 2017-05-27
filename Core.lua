@@ -163,11 +163,14 @@ local announcers = {
 	TychusA = "Tychus",
 	ZeratulA = "Zeratul",
 	-- Diablo
-	BarbarianA = "Sonya",
-	--ButcherA = "Butcher", -- ButcherA is just a bunch of the ButcherBase sound files (grunts/growls)
-	DemonHunterA = "Valla",
+	--ButcherA = "Butcher", -- registered only once (is just grunts and growls)
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
+	BarbarianA = "Sonya",
+	DemonHunterA = "Valla",
+	-- Overwatch
+	DvaA = "D.Va",
+	GenjiA = "Genji",
 }
 
 function ns.RegisterVoices()

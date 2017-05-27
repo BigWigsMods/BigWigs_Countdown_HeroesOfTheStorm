@@ -11,6 +11,7 @@ Heroes 2.0 announcers:
 - Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Gazlowe, Illidan, Li Li, Malfurion, Murky, Rehgar, Stitches
 - StarCraft: Abathur, Sgt. Hammer, Tassadar, Tychus, Zeratul
 - Diablo: Sonya, Butcher, Valla, Diablo, Nazeebo
+- Overwatch: D.Va, Genji
 
 And the default announcers:
 
