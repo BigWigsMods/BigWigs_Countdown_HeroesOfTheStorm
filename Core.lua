@@ -15,9 +15,13 @@ local _, ns = ...
 --
 
 local L = {}
-L["Countdown: Heroes of the Storm"] = "Countdown: Heroes of the Storm"
-L["Language"] = "Language"
-L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."] = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+L.title = "Countdown: Heroes of the Storm"
+L.language = "Language"
+L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+-- varies for asian locales
+L.heroes = "Heroes of the Storm"
+L.key = "%s: %s: %s"
+L.key_short = "%s: %s"
 ns.L = L
 
 -------------------------------------------------------------------------------
@@ -70,13 +74,13 @@ function ns.RegisterPlugin(event)
 
 	plugin.subPanelOptions = {
 		key = "Big Wigs: Voice: Heroes of the Storm",
-		name = L["Countdown: Heroes of the Storm"],
+		name = L.title,
 		options = {
-			name = L["Countdown: Heroes of the Storm"],
+			name = L.title,
 			type = "group",
 			args = {
 				locale = {
-					name = L["Language"],
+					name = L.language,
 					type = "select",
 					values = localeMap,
 					get = function() return db.locale end,
@@ -87,7 +91,7 @@ function ns.RegisterPlugin(event)
 					order = 2,
 				},
 				notice = {
-					name = "\n"..L["You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."],
+					name = "\n" .. L.locale_warning,
 					type = "description",
 					hidden = function()
 						local count = 0
@@ -112,6 +116,8 @@ function ns.RegisterPlugin(event)
 		profileUpdate()
 	end
 
+	ns.RegisterVoices()
+
 	-- Force initialization since the addon is already loaded
 	BigWigs.ADDON_LOADED()
 end
@@ -127,21 +133,20 @@ end
 
 local announcers = {
 	-- Map
+	Adjutant = "Adjutant",
+	Angel = "Angel",
 	Blackheart = "Blackheart",
+	Demon = "Demon",
 	GardensDayAnnouncer = "Queen Nightshade",
 	LadyofThorns = "Lady of Thorns",
 	Necromancer = "Necromancer",
 	RavenLord = "Raven Lord",
 	SnakeGod = "Snake God",
 	SpiderQueen = "Spider Queen",
-	Angel = "Angel",
-	Demon = "Demon",
-	Adjutant = "Adjutant",
+	-- Brawl
 	Athena = "Athena",
 	Arena = "Arena",
 	Commodore = "Commodore",
-
-	-- Heroes
 	-- Warcraft
 	AnubarakAnnouncer = "Anub'arak",
 	ArthasA = "Arthas",
@@ -164,7 +169,7 @@ local announcers = {
 	TychusA = "Tychus",
 	ZeratulA = "Zeratul",
 	-- Diablo
-	--ButcherA = "Butcher", -- registered only once (is just grunts and growls)
+	ButcherA = "Butcher",
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
@@ -181,24 +186,27 @@ function ns.RegisterVoices()
 	loaded[locale] = true
 
 	local lang = localeMap[locale]
-	-- could localize all of the string, but changes would break sound settings so meh
-	local key = "%s: Heroes of the Storm: %s"
 	local path = "Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\%s\\%s_Countdown%dsec00.ogg"
 
-	for file, name in next, announcers do
-		BigWigsAPI:RegisterCountdown(key:format(lang, name), {
-			path:format(locale, file, 1),
-			path:format(locale, file, 2),
-			path:format(locale, file, 3),
-			path:format(locale, file, 4),
-			path:format(locale, file, 5),
-		})
+	for k, v in next, announcers do
+		if k ~= "ButcherA" then
+			local id = ("%s: %s: %s"):format(lang, "Heroes of the Storm", v) -- should be using k but I don't want to break everything D;
+			local name = L.key:format(lang, L.heroes, L[k] or v)
+			BigWigsAPI:RegisterCountdown(id, name, {
+				path:format(locale, k, 1),
+				path:format(locale, k, 2),
+				path:format(locale, k, 3),
+				path:format(locale, k, 4),
+				path:format(locale, k, 5),
+			})
+		end
 	end
 
-	-- Special case Butcher (reversed from HotS so 2/1 are the more distinctive sounds)
+	-- Special case Butcher (It's just grunts and growls)
+	-- This is reversed from HotS so 2/1 are the more distinctive sounds
 	local butcher = "Heroes of the Storm: Butcher"
 	if not BigWigsAPI:HasCountdown(butcher) then
-		BigWigsAPI:RegisterCountdown(butcher, {
+		BigWigsAPI:RegisterCountdown(butcher, L.key_short:format(L.heroes, L.ButcherA or "Butcher"), {
 			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_DismissBark02.ogg",
 			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_Attack08.ogg",
 			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_VOX_GetHitSmall02.ogg",
@@ -207,5 +215,3 @@ function ns.RegisterVoices()
 		})
 	end
 end
-
-ns.RegisterVoices()

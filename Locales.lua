@@ -1,27 +1,336 @@
--- Update at http://www.wowace.com/projects/bigwigs_countdown_heroesofthestorm/localization/
-
 local _, ns = ...
 local L = ns.L
 
+-- Kind of fucked myself by using the localized name as part of the id x_x
+-- So here are the actual names Blizzard uses that differ from what I used
+L.Angel = "Ilarian"
+L.Arena = "Arena Announcer"
+L.Commodore = "Commodore Ford"
+L.Demon = "Beleth"
+L.Necromancer = "Grave Keeper"
+-- No character entries ??
+-- L.SnakeGod = "Snake God"
+-- L.SpiderQueen = "Spider Queen" -- UI/MapLoadingScreen/TombOfTheSpiderQueen
+
+
 local locale = GetLocale()
 if locale == "deDE" then
---@localization(locale="deDE", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+L.language = "Sprache"
+L.locale_warning = "Du hast deine Sprache verändert! Normalerweise wird nur ein Sprachset verwendet, aber jede Sprache, zu der du wechselst, wird so lange aufgelistet bleiben, bis du dein UI neu lädst."
+
+L.Adjutant = "Adjutant"
+L.Arena = "Arena-Ansager"
+L.Blackheart = "Schwarzherz"
+L.Commodore = "Kommodore Ford"
+L.GardensDayAnnouncer = "Königin Nachtschatten"
+L.LadyofThorns = "Herrin der Dornen"
+L.Necromancer = "Totengräber"
+L.RavenLord = "Rabenfürst"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Spinnenkönigin"
+L.BrightwingA = "Funkelchen"
+L.ButcherA = "Der Schlächter"
+L.StitchesA = "Kleiner"
+
 elseif locale == "esES" then
---@localization(locale="esES", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.Adjutant = "Ayudante"
+L.Arena = "Comentarista de la arena"
+L.Blackheart = "Almanegra"
+L.Commodore = "Comodoro Ford"
+L.GardensDayAnnouncer = "Reina Nocheoscura"
+L.LadyofThorns = "Señora de las espinas"
+L.Necromancer = "Guardián de las Tumbas"
+L.RavenLord = "Señor de los Cuervos"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Reina Araña"
+L.BrightwingA = "Alafeliz"
+L.ButcherA = "El carnicero"
+L.StitchesA = "Puntos"
+
 elseif locale == "esMX" then
---@localization(locale="esMX", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.Adjutant = "Adjutora"
+L.Arena = "Presentador de la arena"
+L.Blackheart = "Almanegra"
+L.Commodore = "Commodore Ford"
+L.GardensDayAnnouncer = "Reina Sombranegra"
+L.LadyofThorns = "Dama de las espinas"
+L.Necromancer = "Guardián de la cripta"
+L.RavenLord = "Lord Cuervo"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Reina Araña"
+L.BrightwingA = "Alasol"
+L.ButcherA = "Carnicero"
+L.StitchesA = "Puntos"
+
 elseif locale == "frFR" then
---@localization(locale="frFR", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.key = "%s : %s : %s"
+L.key_short = "%s : %s"
+
+L.Adjutant = "Aide de camp"
+L.Arena = "Annonceur de l’arène"
+L.Blackheart = "Cœur-Noir"
+L.Commodore = "Amiral Ford"
+L.GardensDayAnnouncer = "Reine Belladone"
+L.LadyofThorns = "Dame des épines"
+L.Necromancer = "Fossoyeur"
+L.RavenLord = "Seigneur corbeau"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Reine Araignée"
+L.BrightwingA = "Luisaile"
+L.ButcherA = "Le Boucher"
+L.StitchesA = "Balafré"
+
 elseif locale == "itIT" then
---@localization(locale="itIT", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.Adjutant = "Aiutante"
+L.Arena = "Annunciatore arena"
+L.Blackheart = "Cuornero"
+L.Commodore = "Commodoro Ford"
+L.GardensDayAnnouncer = "Regina Ombranera"
+L.LadyofThorns = "Signora delle Spine"
+L.Necromancer = "Custode dei Morti"
+L.RavenLord = "Signore dei Corvi"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Regina Ragno"
+L.BrightwingA = "Alachiara"
+L.ButcherA = "Macellaio"
+L.StitchesA = "Tritacarne"
+
 elseif locale == "koKR" then
---@localization(locale="koKR", format="lua_additive_table", handle-unlocalized="ignore")@
+
+L.title = "초읽기 : 히어로즈 오브 더 스톰"
+L.language = "언어"
+L.locale_warning = "당신의 언어를 변경했습니다! 일반적으로 하나의 음성 세트만 사용하지만, 변경한 각 언어는 당신이 UI를 다시 불러오기 전까지 목록에 남아있습니다."
+
+L.heroes = "히어로즈 오브 더 스톰"
+L.key = "%s : %s : %s"
+L.key_short = "%s : %s"
+
+L.Adjutant = "부관"
+L.Angel = "일라리안"
+L.Arena = "투기장 아나운서"
+L.Blackheart = "블랙하트"
+L.Commodore = "포드 제독"
+L.Demon = "벨레스"
+L.GardensDayAnnouncer = "밤그늘 여왕"
+L.LadyofThorns = "가시의 여군주"
+L.Necromancer = "묘지기"
+L.RavenLord = "까마귀 군주"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "거미 여왕"
+
+L.Abathur = "아바투르"
+L.AnubarakAnnouncer = "아눕아락"
+L.ArthasA = "아서스"
+L.BarbarianA = "소냐"
+L.BrightwingA = "빛나래"
+L.ButcherA = "도살자"
+L.DemonHunterA = "발라"
+L.DiabloA = "디아블로"
+L.DvaA = "D.Va"
+L.ETCA = "정예 타우렌 족장"
+L.FalstadA = "폴스타트"
+L.GarroshA = "가로쉬"
+L.GazloweA = "가즈로"
+L.GenjiA = "겐지"
+L.IllidanA = "일리단"
+L.LiLiA = "리 리"
+L.MalfurionA = "말퓨리온"
+L.MuradinA = "무라딘"
+L.MurkyA = "머키"
+L.RehgarAnnouncer = "레가르"
+L.SiegeTankA = "해머 상사"
+L.StitchesA = "누더기"
+L.TassadarA = "태사다르"
+L.TychusA = "타이커스"
+L.WitchDoctorA = "나지보"
+L.ZeratulA = "제라툴"
+
 elseif locale == "ptBR" then
---@localization(locale="ptBR", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.Adjutant = "Adjutora"
+L.Arena = "Narrador da Arena"
+L.Blackheart = "Coração Negro"
+L.Commodore = "Comodoro Florioto Peixano"
+L.GardensDayAnnouncer = "Rainha Coirana"
+L.LadyofThorns = "Senhora dos Espinhos"
+L.Necromancer = "Coveiro"
+L.RavenLord = "Senhor dos Corvos"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Aranha Rainha"
+L.BrightwingA = "Asaluz"
+L.ButcherA = "Açougueiro"
+L.StitchesA = "Suturin"
+
 elseif locale == "ruRU" then
---@localization(locale="ruRU", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.Adjutant = "Адъютант"
+L.Angel = "Иларий"
+L.Arena = "Комментатор арены"
+L.Blackheart = "Черносерд"
+L.Commodore = "Командор Форд"
+L.Demon = "Белет"
+L.GardensDayAnnouncer = "Королева Белладонна"
+L.LadyofThorns = "Королева Шипов"
+L.Necromancer = "Могильщик"
+L.RavenLord = "Повелитель Воронов"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "Королевы Пауков"
+
+L.Abathur = "Абатур"
+L.AnubarakAnnouncer = "Ануб'арак"
+L.ArthasA = "Артас"
+L.BarbarianA = "Соня"
+L.BrightwingA = "Светик"
+L.ButcherA = "Мясник"
+L.DemonHunterA = "Валла"
+L.DiabloA = "Диабло"
+L.DvaA = "D.Va"
+L.ETCA = "E.T.C."
+L.FalstadA = "Фалстад"
+L.GarroshA = "Гаррош"
+L.GazloweA = "Газлоу"
+L.GenjiA = "Гэндзи"
+L.IllidanA = "Иллидан"
+L.LiLiA = "Ли Ли"
+L.MalfurionA = "Малфурион"
+L.MuradinA = "Мурадин"
+L.MurkyA = "Мурчаль"
+L.RehgarAnnouncer = "Регар"
+L.SiegeTankA = "Сержант Кувалда"
+L.StitchesA = "Стежок"
+L.TassadarA = "Тассадар"
+L.TychusA = "Тайкус"
+L.WitchDoctorA = "Назибо"
+L.ZeratulA = "Зератул"
+
 elseif locale == "zhCN" then
---@localization(locale="zhCN", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.heroes = "风暴英雄"
+L.key = "%s：%s：%s"
+L.key_short = "%s：%s"
+
+L.Adjutant = "副官"
+L.Angel = "衣拉瑞安"
+L.Arena = "竞技场播报员"
+L.Blackheart = "黑心船长"
+L.Commodore = "准将福特"
+L.Demon = "贝莱斯"
+L.GardensDayAnnouncer = "龙葵女王"
+L.LadyofThorns = "荆棘女士"
+L.Necromancer = "守墓人"
+L.RavenLord = "乌鸦之神"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "蛛后"
+
+L.Abathur = "阿巴瑟"
+L.AnubarakAnnouncer = "阿努巴拉克"
+L.ArthasA = "阿尔萨斯"
+L.BarbarianA = "桑娅"
+L.BrightwingA = "光明之翼"
+L.ButcherA = "屠夫"
+L.DemonHunterA = "维拉"
+L.DiabloA = "迪亚波罗"
+L.DvaA = "D.Va"
+L.ETCA = "精英牛头人酋长"
+L.FalstadA = "弗斯塔德"
+L.GarroshA = "加尔鲁什"
+L.GazloweA = "加兹鲁维"
+L.GenjiA = "源氏"
+L.IllidanA = "伊利丹"
+L.LiLiA = "丽丽"
+L.MalfurionA = "玛法里奥"
+L.MuradinA = "穆拉丁"
+L.MurkyA = "奔波尔霸"
+L.RehgarAnnouncer = "雷加尔"
+L.SiegeTankA = "重锤军士"
+L.StitchesA = "缝合怪"
+L.TassadarA = "塔萨达尔"
+L.TychusA = "泰凯斯"
+L.WitchDoctorA = "纳兹波"
+L.ZeratulA = "泽拉图"
+
 elseif locale == "zhTW" then
---@localization(locale="zhTW", format="lua_additive_table", handle-unlocalized="ignore")@
+
+-- L.title = "Countdown: Heroes of the Storm"
+-- L.language = "Language"
+-- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+
+L.heroes = "暴雪英霸"
+L.key = "%s：%s：%s"
+L.key_short = "%s：%s"
+
+L.Adjutant = "副官"
+L.Angel = "伊萊瑞"
+L.Arena = "競技場播報員"
+L.Blackheart = "黑心船長"
+L.Commodore = "福特准將"
+L.Demon = "貝雷斯"
+L.GardensDayAnnouncer = "夜影女皇"
+L.LadyofThorns = "荊棘夫人"
+L.Necromancer = "守墓者"
+L.RavenLord = "掠鴉王"
+-- L.SnakeGod = "Snake God"
+L.SpiderQueen = "蛛后"
+
+L.Abathur = "阿巴瑟"
+L.AnubarakAnnouncer = "阿努巴拉克"
+L.ArthasA = "阿薩斯"
+L.BarbarianA = "桑雅"
+L.BrightwingA = "亮翼"
+L.ButcherA = "屠夫"
+L.DemonHunterA = "維拉"
+L.DiabloA = "迪亞布羅"
+L.DvaA = "D.Va"
+L.ETCA = "精英牛頭大佬"
+L.FalstadA = "弗斯塔德"
+L.GarroshA = "卡爾洛斯"
+L.GazloweA = "加茲魯維"
+L.GenjiA = "源氏"
+L.IllidanA = "伊利丹"
+L.LiLiA = "莉莉"
+L.MalfurionA = "瑪法里恩"
+L.MuradinA = "穆拉丁"
+L.MurkyA = "莫奇"
+L.RehgarAnnouncer = "雷加"
+L.SiegeTankA = "榔頭中士"
+L.StitchesA = "縫合怪"
+L.TassadarA = "塔薩達"
+L.TychusA = "泰科斯"
+L.WitchDoctorA = "納奇班"
+L.ZeratulA = "澤拉圖"
+
 end
