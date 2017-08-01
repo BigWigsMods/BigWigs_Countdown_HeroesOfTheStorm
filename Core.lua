@@ -148,6 +148,7 @@ local announcers = {
 	BrightwingA = "Brightwing",
 	ETCA = "E.T.C.",
 	FalstadA = "Falstad",
+	GarroshA = "Garrosh",
 	GazloweA = "Gazlowe",
 	IllidanA = "Illidan",
 	LiLiA = "Li Li",
