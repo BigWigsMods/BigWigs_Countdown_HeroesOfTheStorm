@@ -18,13 +18,13 @@ And the (default) map announcers:
 - Blackheart (Blackheart's Bay)
 - Queen Nightshade (Garden of Terror)
 - Lady of Thorns (Dragon Shrine)
-- Necromancer (Haunted Mines/Towers of Doom)
+- Grave Keeper (Haunted Mines/Towers of Doom)
 - Raven Lord (Cursed Hallow/Towers of Doom)
 - Snake God (Sky Temple)
-- Angel and Demon (Battlefield of Eternity/Infernal Shrines)
+- Ilarian and Beleth (Battlefield of Eternity/Infernal Shrines)
 - Adjutant (Braxis Holdout/Warhead Junction)
 - Athena (Hanamura)
-- Arena/Commodore (Brawl announcers)
+- Arena Announcer/Commodore Ford (Brawl announcers)
 
 
 #### Download
