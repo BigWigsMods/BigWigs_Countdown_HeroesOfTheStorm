@@ -8,7 +8,7 @@ The language is initially set using your locale. You can change the language in 
 
 Heroes 2.0 announcers:
 
-- Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Li Li, Malfurion, Murky, Rehgar, Stitches
+- Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Malfurion, Murky, Rehgar, Stitches
 - StarCraft: Abathur, Sgt. Hammer, Tassadar, Tychus, Zeratul
 - Diablo: Sonya, Butcher (nonverbal), Valla, Diablo, Nazeebo
 - Overwatch: D.Va, Genji
