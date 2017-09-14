@@ -1,0 +1,4 @@
+package-as: BigWigs_Countdown_HeroesOfTheStorm
+
+ignore:
+  - README.md
