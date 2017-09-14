@@ -25,6 +25,10 @@ local localeMap = {
 	zhCN = "简体中文",
 	zhTW = "繁體中文",
 }
+local defaultLocale = GetLocale()
+if not localeMap[defaultLocale] then
+	defaultLocale = "enUS"
+end
 
 local loaded = {}
 
@@ -51,9 +55,8 @@ function ns.RegisterPlugin(event)
 	local plugin = BigWigs:NewPlugin("HeroesVoices")
 	if not plugin then return end
 
-	local locale = GetLocale()
 	plugin.defaultDB = {
-		locale = localeMap[locale] and locale or "enUS"
+		locale = defaultLocale
 	}
 
 	plugin.subPanelOptions = {
@@ -164,7 +167,7 @@ local announcers = {
 }
 
 function ns.RegisterVoices()
-	local locale = db.locale or "enUS"
+	local locale = db.locale or defaultLocale
 	if loaded[locale] then return end
 
 	loaded[locale] = true
