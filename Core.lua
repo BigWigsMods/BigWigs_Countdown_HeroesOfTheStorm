@@ -6,15 +6,7 @@ local _, ns = ...
 -- Locale
 --
 
-local L = {}
-L.title = "Countdown: Heroes of the Storm"
-L.language = "Language"
-L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
--- varies for asian locales
-L.heroes = "Heroes of the Storm"
-L.key = "%s: %s: %s"
-L.key_short = "%s: %s"
-ns.L = L
+local L = ns.L
 
 -------------------------------------------------------------------------------
 -- Locals
@@ -107,8 +99,6 @@ function ns.RegisterPlugin(event)
 		self:RegisterMessage("BigWigs_ProfileUpdate", profileUpdate)
 		profileUpdate()
 	end
-
-	ns.RegisterVoices()
 
 	-- Force initialization since the addon is already loaded
 	BigWigs.ADDON_LOADED()
@@ -209,3 +199,5 @@ function ns.RegisterVoices()
 		})
 	end
 end
+
+ns.RegisterVoices()

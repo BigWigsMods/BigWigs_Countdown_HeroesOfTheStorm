@@ -1,5 +1,14 @@
 local _, ns = ...
+ns.L = {}
 local L = ns.L
+
+L.title = "Countdown: Heroes of the Storm"
+L.language = "Language"
+L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
+-- varies for asian locales
+L.heroes = "Heroes of the Storm"
+L.key = "%s: %s: %s"
+L.key_short = "%s: %s"
 
 -- Kind of fucked myself by using the localized name as part of the id x_x
 -- So here are the actual names Blizzard uses that differ from what I used

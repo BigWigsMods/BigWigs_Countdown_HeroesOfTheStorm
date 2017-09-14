@@ -14,5 +14,5 @@
 ## Version: @project-version@
 ## Dependencies: BigWigs
 
-Core.lua
 Locales.lua
+Core.lua
