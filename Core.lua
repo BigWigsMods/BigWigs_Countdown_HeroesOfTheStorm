@@ -1,11 +1,3 @@
-
-if GetAddOnEnableState(UnitName("player"), "BigWigs_Voice_HeroesOfTheStorm") > 0 then
-	C_Timer.After(7, function()
-		print("|cFF33FF99BigWigs_Voice_HeroesOfTheStorm|r has been renamed to |cFF33FF99BigWigs_Countdown_HeroesOfTheStorm|r and you seem to have both addons enabled! Please remove the old |cFF33FF99BigWigs_Voice_HeroesOfTheStorm|r folder from your Interface/AddOns folder to ensure you're using the correct version.")
-	end)
-	return
-end
-
 -- luacheck: globals BigWigs BigWigs3DB BigWigsAPI BigWigsLoader
 
 local _, ns = ...
