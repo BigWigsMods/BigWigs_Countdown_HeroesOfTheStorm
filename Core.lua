@@ -128,11 +128,13 @@ local announcers = {
 	RavenLord = "Raven Lord",
 	SnakeGod = "Snake God",
 	SpiderQueen = "Spider Queen",
+	VolskayaA = "Volskaya",
 	-- Brawl
 	Athena = "Athena",
 	Arena = "Arena",
 	Commodore = "Commodore",
 	-- Warcraft
+	AlexstraszaA = "Alexstrasza",
 	AnubarakAnnouncer = "Anub'arak",
 	ArthasA = "Arthas",
 	BrightwingA = "Brightwing",
@@ -151,6 +153,8 @@ local announcers = {
 	StitchesA = "Stitches",
 	-- StarCraft
 	Abathur = "Abathur",
+	AlarakA = "Alarak",
+	BlazeA = "Blaze",
 	SiegeTankA = "Sgt. Hammer",
 	TassadarA = "Tassadar",
 	TychusA = "Tychus",
@@ -160,10 +164,13 @@ local announcers = {
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
+	TyraelA = "Tyrael",
 	DemonHunterA = "Valla",
 	-- Overwatch
 	DvaA = "D.Va",
 	GenjiA = "Genji",
+	HanzoA = "Hanzo",
+	JunkratA = "Junkrat",
 }
 
 function ns.RegisterVoices()
