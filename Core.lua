@@ -165,6 +165,7 @@ local announcers = {
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
 	TyraelA = "Tyrael",
+	TyraelMechaA = "Mecha Tyrael",
 	DemonHunterA = "Valla",
 	-- Overwatch
 	DvaA = "D.Va",

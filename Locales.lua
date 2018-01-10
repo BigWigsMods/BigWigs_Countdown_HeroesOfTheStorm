@@ -39,6 +39,7 @@ L.RavenLord = "Rabenfürst"
 L.BrightwingA = "Funkelchen"
 L.ButcherA = "Der Schlächter"
 L.StitchesA = "Kleiner"
+L.TyraelMechaA = "Mecha-Tyrael"
 
 elseif locale == "esES" then
 
@@ -58,6 +59,7 @@ L.BlazeA = "Vulcano"
 L.BrightwingA = "Alafeliz"
 L.ButcherA = "El carnicero"
 L.StitchesA = "Puntos"
+L.TyraelMechaA = "Mecatyrael"
 
 elseif locale == "esMX" then
 
@@ -76,6 +78,7 @@ L.RavenLord = "Lord Cuervo"
 L.BrightwingA = "Alasol"
 L.ButcherA = "Carnicero"
 L.StitchesA = "Puntos"
+L.TyraelMechaA = "Mecatyrael"
 
 elseif locale == "frFR" then
 
@@ -103,6 +106,7 @@ L.JunkratA = "Chacal"
 L.SiegeTankA = "Sgt Marteau"
 L.StitchesA = "Balafré"
 L.TyraelA = "Tyraël"
+L.TyraelMechaA = "Méca Tyraël"
 L.WitchDoctorA = "Nasibo"
 
 elseif locale == "itIT" then
@@ -122,6 +126,7 @@ L.RavenLord = "Signore dei Corvi"
 L.BrightwingA = "Alachiara"
 L.ButcherA = "Macellaio"
 L.StitchesA = "Tritacarne"
+L.TyraelMechaA = "Tyrael Mech"
 
 elseif locale == "koKR" then
 
@@ -179,6 +184,7 @@ L.StitchesA = "누더기"
 L.TassadarA = "태사다르"
 L.TychusA = "타이커스"
 L.TyraelA = "티리엘"
+L.TyraelMechaA = "메카 티리엘"
 L.WitchDoctorA = "나지보"
 L.ZeratulA = "제라툴"
 
@@ -199,6 +205,7 @@ L.RavenLord = "Senhor dos Corvos"
 L.BrightwingA = "Asaluz"
 L.ButcherA = "Açougueiro"
 L.StitchesA = "Suturin"
+L.TyraelMechaA = "Meca-Tyrael"
 
 elseif locale == "ruRU" then
 
@@ -252,6 +259,7 @@ L.StitchesA = "Стежок"
 L.TassadarA = "Тассадар"
 L.TychusA = "Тайкус"
 L.TyraelA = "Тираэль"
+L.TyraelMechaA = "Меха Тираэль"
 L.WitchDoctorA = "Назибо"
 L.ZeratulA = "Зератул"
 
@@ -311,6 +319,7 @@ L.StitchesA = "缝合怪"
 L.TassadarA = "塔萨达尔"
 L.TychusA = "泰凯斯"
 L.TyraelA = "泰瑞尔"
+L.TyraelMechaA = "机甲泰瑞尔"
 L.WitchDoctorA = "纳兹波"
 L.ZeratulA = "泽拉图"
 
@@ -370,6 +379,7 @@ L.StitchesA = "縫合怪"
 L.TassadarA = "塔薩達"
 L.TychusA = "泰科斯"
 L.TyraelA = "泰瑞爾"
+L.TyraelMechaA = "機甲泰瑞爾"
 L.WitchDoctorA = "納奇班"
 L.ZeratulA = "澤拉圖"
 
