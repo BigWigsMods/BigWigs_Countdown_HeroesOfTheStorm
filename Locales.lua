@@ -95,7 +95,11 @@ L.Necromancer = "Fossoyeur"
 L.RavenLord = "Seigneur corbeau"
 L.BrightwingA = "Luisaile"
 L.ButcherA = "Le Boucher"
+L.GazloweA = "Gazleu"
+L.MurkyA = "Bourbie"
+L.SiegeTankA = "Sgt Marteau"
 L.StitchesA = "Balafré"
+L.WitchDoctorA = "Nasibo"
 
 elseif locale == "itIT" then
 
