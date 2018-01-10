@@ -24,7 +24,7 @@ L.SpiderQueen = "Neithis"
 local locale = GetLocale()
 if locale == "deDE" then
 
--- L.title = "Countdown: Heroes of the Storm"
+L.title = "Countdown: Heroes of the Storm"
 L.language = "Sprache"
 L.locale_warning = "Du hast deine Sprache verändert! Normalerweise wird nur ein Sprachset verwendet, aber jede Sprache, zu der du wechselst, wird so lange aufgelistet bleiben, bis du dein UI neu lädst."
 
@@ -44,8 +44,8 @@ L.TyraelMechaA = "Mecha-Tyrael"
 
 elseif locale == "esES" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Cuenta atrás: Heroes of the Storm"
+L.language = "Idioma"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.Adjutant = "Ayudante"
@@ -65,8 +65,8 @@ L.TyraelMechaA = "Mecatyrael"
 
 elseif locale == "esMX" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Cuenta atrás: Heroes of the Storm"
+L.language = "Idioma"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.Adjutant = "Adjutora"
@@ -86,8 +86,8 @@ L.TyraelMechaA = "Mecatyrael"
 
 elseif locale == "frFR" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Compte à rebours : Heroes of the Storm"
+L.language = "Langue"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.key = "%s : %s : %s"
@@ -115,8 +115,8 @@ L.WitchDoctorA = "Nasibo"
 
 elseif locale == "itIT" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Conto alla Rovescia: Heroes of the Storm"
+L.language = "Lingua"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.Adjutant = "Aiutante"
@@ -196,8 +196,8 @@ L.ZeratulA = "제라툴"
 
 elseif locale == "ptBR" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Contagem Regressiva: Heroes of the Storm"
+L.language = "Idioma"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.Adjutant = "Adjutora"
@@ -219,8 +219,8 @@ L.WitchDoctorA = "Nazibo"
 
 elseif locale == "ruRU" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "Обратный отсчет: Heroes of the Storm"
+L.language = "Язык"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.Adjutant = "Адъютант"
@@ -275,8 +275,8 @@ L.ZeratulA = "Зератул"
 
 elseif locale == "zhCN" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "倒数：风暴英雄"
+L.language = "语言"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.heroes = "风暴英雄"
@@ -335,8 +335,8 @@ L.ZeratulA = "泽拉图"
 
 elseif locale == "zhTW" then
 
--- L.title = "Countdown: Heroes of the Storm"
--- L.language = "Language"
+L.title = "倒數：暴雪英霸"
+L.language = "語言"
 -- L.locale_warning = "You've changed your language! Normally only one set of voices is used, but each language you change to will remain listed until you reload your UI."
 
 L.heroes = "暴雪英霸"
