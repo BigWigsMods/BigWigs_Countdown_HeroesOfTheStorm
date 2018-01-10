@@ -8,10 +8,10 @@ The language is initially set using your locale. You can change the language in 
 
 Heroes 2.0 announcers:
 
-- Warcraft: Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Malfurion, Murky, Rehgar, Stitches
-- StarCraft: Abathur, Sgt. Hammer, Tassadar, Tychus, Zeratul
+- Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Malfurion, Murky, Rehgar, Stitches
+- StarCraft: Abathur, Alarak, Blaze, Sgt. Hammer, Tassadar, Tychus, Zeratul
 - Diablo: Sonya, Butcher (nonverbal), Valla, Diablo, Nazeebo
-- Overwatch: D.Va, Genji
+- Overwatch: D.Va, Genji, Hanzo, Junkrat
 
 And the (default) map announcers:
 
@@ -20,12 +20,14 @@ And the (default) map announcers:
 - Lady of Thorns (Dragon Shrine)
 - Grave Keeper (Haunted Mines/Towers of Doom)
 - Raven Lord (Cursed Hallow/Towers of Doom)
-- Snake God (Sky Temple)
+- Ka (Sky Temple)
+- Nelthis (Tomb of the Spider Queen)
 - Ilarian and Beleth (Battlefield of Eternity/Infernal Shrines)
 - Adjutant (Braxis Holdout/Warhead Junction)
 - Athena (Hanamura)
+- Volskaya (Volskaya Foundry)
 - Arena Announcer/Commodore Ford (Brawl announcers)
 
 
 #### Download
-https://mods.curse.com/addons/wow/bigwigs_countdown_heroesofthestorm
+https://www.curseforge.com/wow/addons/bigwigs_countdown_heroesofthestorm
