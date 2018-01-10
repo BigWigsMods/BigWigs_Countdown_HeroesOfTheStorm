@@ -160,7 +160,7 @@ local announcers = {
 	TychusA = "Tychus",
 	ZeratulA = "Zeratul",
 	-- Diablo
-	ButcherA = "Butcher",
+	-- ButcherA = "Butcher",
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
@@ -184,17 +184,15 @@ function ns.RegisterVoices()
 	local path = "Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\%s\\%s_Countdown%dsec00.ogg"
 
 	for k, v in next, announcers do
-		if k ~= "ButcherA" then
-			local id = ("%s: %s: %s"):format(lang, "Heroes of the Storm", v) -- should be using k but I don't want to break everything D;
-			local name = L.key:format(lang, L.heroes, L[k] or v)
-			BigWigsAPI:RegisterCountdown(id, name, {
-				path:format(locale, k, 1),
-				path:format(locale, k, 2),
-				path:format(locale, k, 3),
-				path:format(locale, k, 4),
-				path:format(locale, k, 5),
-			})
-		end
+		local id = ("%s: %s: %s"):format(lang, "Heroes of the Storm", v) -- should be using k but I don't want to break everything D;
+		local name = L.key:format(lang, L.heroes, L[k] or v)
+		BigWigsAPI:RegisterCountdown(id, name, {
+			path:format(locale, k, 1),
+			path:format(locale, k, 2),
+			path:format(locale, k, 3),
+			path:format(locale, k, 4),
+			path:format(locale, k, 5),
+		})
 	end
 
 	-- Special case Butcher (It's just grunts and growls)
