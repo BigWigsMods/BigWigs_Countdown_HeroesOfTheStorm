@@ -8,7 +8,7 @@ The language is initially set using your locale. You can change the language in 
 
 Hero announcers:
 
-- Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Malfurion, Muradin, Murky, Rehgar, Stitches
+- Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev, Malfurion, Muradin, Murky, Rehgar, Stitches
 - StarCraft: Abathur, Alarak, Blaze, Sgt. Hammer, Tassadar, Tychus, Zeratul
 - Diablo: Butcher (nonverbal), Diablo, Nazeebo, Sonya, Tyrael, Valla
 - Overwatch: D.Va, Genji, Hanzo, Junkrat

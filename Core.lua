@@ -146,6 +146,7 @@ local announcers = {
 	JainaA = "Jaina",
 	KelthuzadA = "Kel'Thuzad",
 	LiLiA = "Li Li",
+	MaievA = "Maiev",
 	MalfurionA = "Malfurion",
 	MuradinA = "Muradin",
 	MurkyA = "Murky",
