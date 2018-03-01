@@ -120,6 +120,7 @@ local announcers = {
 	-- Map
 	Adjutant = "Adjutant",
 	Angel = "Angel",
+	Athena = "Athena",
 	Blackheart = "Blackheart",
 	Demon = "Demon",
 	GardensDayAnnouncer = "Queen Nightshade",
@@ -130,7 +131,6 @@ local announcers = {
 	SpiderQueen = "Spider Queen",
 	VolskayaA = "Volskaya",
 	-- Brawl
-	Athena = "Athena",
 	Arena = "Arena",
 	Commodore = "Commodore",
 	-- Warcraft
@@ -161,18 +161,19 @@ local announcers = {
 	TychusA = "Tychus",
 	ZeratulA = "Zeratul",
 	-- Diablo
-	-- ButcherA = "Butcher",
+	-- ButcherA = "Butcher", -- same for all languages
 	DiabloA = "Diablo",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
 	TyraelA = "Tyrael",
-	TyraelMechaA = "Mecha Tyrael",
 	DemonHunterA = "Valla",
 	-- Overwatch
 	DvaA = "D.Va",
 	GenjiA = "Genji",
 	HanzoA = "Hanzo",
 	JunkratA = "Junkrat",
+	-- Skins
+	TyraelMechaA = "Mecha Tyrael",
 }
 
 function ns.RegisterVoices()
