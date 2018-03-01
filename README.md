@@ -6,7 +6,7 @@ Adds countdown voices from Heroes of the Storm to BigWigs for all supported loca
 
 The language is initially set using your locale. You can change the language in the BigWigs options (`/bw`). The default countdown voice is set in "Sounds". You can also enable countdown per ability and change the voice for it in that ability's "Sounds" tab.
 
-Hero announcers:
+## Hero announcers
 
 - Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev, Malfurion, Muradin, Murky, Rehgar, Stitches
 - StarCraft: Abathur, Alarak, Blaze, Sgt. Hammer, Tassadar, Tychus, Zeratul
@@ -14,7 +14,7 @@ Hero announcers:
 - Overwatch: D.Va, Genji, Hanzo, Junkrat
 - Nexus: Mecha Tyrael
 
-Map announcers:
+## Map announcers
 
 - Blackheart (Blackheart's Bay)
 - Queen Nightshade (Garden of Terror)
@@ -29,6 +29,6 @@ Map announcers:
 - Volskaya (Volskaya Foundry)
 - Arena Announcer and Commodore Ford (Brawl announcers)
 
+## Download
 
-#### Download
-https://www.curseforge.com/wow/addons/bigwigs_countdown_heroesofthestorm
+<https://www.curseforge.com/wow/addons/bigwigs_countdown_heroesofthestorm>
