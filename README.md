@@ -9,7 +9,7 @@ The language is initially set using your locale. You can change the language in 
 ## Hero announcers
 
 - Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev, Malfurion, Muradin, Murky, Rehgar, Stitches
-- StarCraft: Abathur, Alarak, Blaze, Sgt. Hammer, Tassadar, Tychus, Zeratul
+- StarCraft: Abathur, Alarak, Blaze, Fenix, Sgt. Hammer, Tassadar, Tychus, Zeratul
 - Diablo: Butcher (nonverbal), Diablo, Nazeebo, Sonya, Tyrael, Valla
 - Overwatch: D.Va, Genji, Hanzo, Junkrat
 - Nexus: Mecha Tyrael
@@ -27,7 +27,12 @@ The language is initially set using your locale. You can change the language in 
 - Adjutant (Braxis Holdout/Warhead Junction)
 - Athena (Hanamura)
 - Volskaya (Volskaya Foundry)
-- Arena Announcer and Commodore Ford (Brawl announcers)
+
+## Brawl announcers
+
+- Arena Announcer
+- Commodore Ford
+- Mira Han (Deadman's Stand)
 
 ## Download
 

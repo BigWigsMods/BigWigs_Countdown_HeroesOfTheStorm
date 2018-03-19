@@ -133,6 +133,7 @@ local announcers = {
 	-- Brawl
 	Arena = "Arena",
 	Commodore = "Commodore",
+	MiraA = "Mira Han",
 	-- Warcraft
 	AlexstraszaA = "Alexstrasza",
 	AnubarakAnnouncer = "Anub'arak",
@@ -156,6 +157,7 @@ local announcers = {
 	Abathur = "Abathur",
 	AlarakA = "Alarak",
 	BlazeA = "Blaze",
+	FenixA = "Fenix",
 	SiegeTankA = "Sgt. Hammer",
 	TassadarA = "Tassadar",
 	TychusA = "Tychus",
