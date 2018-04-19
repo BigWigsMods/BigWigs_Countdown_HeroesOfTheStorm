@@ -16,7 +16,8 @@ ability's "Sounds" tab.
   Muradin, Murky, Rehgar, Stitches
 - StarCraft: Abathur, Alarak, Blaze, Fenix, Sgt. Hammer, Tassadar, Tychus,
   Zeratul
-- Diablo: Butcher (nonverbal), Diablo, Nazeebo, Sonya, Tyrael, Valla
+- Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Nazeebo, Sonya, Tyrael,
+  Valla
 - Overwatch: D.Va, Genji, Hanzo, Junkrat
 - Nexus: Mecha Tyrael
 

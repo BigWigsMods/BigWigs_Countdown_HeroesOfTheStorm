@@ -165,6 +165,7 @@ local announcers = {
 	-- Diablo
 	-- ButcherA = "Butcher", -- same for all languages
 	DiabloA = "Diablo",
+	DeckardA = "Deckard Cain",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
 	TyraelA = "Tyrael",
