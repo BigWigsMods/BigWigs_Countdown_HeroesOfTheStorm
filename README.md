@@ -2,12 +2,14 @@
 
 **This addon is a BigWigs plugin and requires BigWigs to run.**
 
-Adds countdown voices from Heroes of the Storm to BigWigs for all supported locales.
+Adds countdown voices from Heroes of the Storm to BigWigs for all supported
+locales.
 
 The language is initially set using your locale. You can change the language in
-the BigWigs options (`/bw`). The default countdown voice is set in "Sounds".
-You can also enable countdown per ability and change the voice for it in that
-ability's "Sounds" tab.
+the BigWigs options (`/bw`). The default ability countdown voice is set in
+"Sounds". You can also enable countdown per ability and change the voice for it
+in that ability's "Sounds" tab or change the pull timer countdown voice in
+"Pull".
 
 ## Hero announcers
 
