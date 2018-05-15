@@ -37,11 +37,12 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
 - Athena (Hanamura)
 - Volskaya (Volskaya Foundry)
 
-## Brawl announcers
+## Brawl/Event announcers
 
 - Arena Announcer
 - Commodore Ford
 - Mira Han (Deadman's Stand)
+- El Guapo (Nexomania)
 
 ## Download
 
