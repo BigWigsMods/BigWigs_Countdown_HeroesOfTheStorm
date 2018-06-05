@@ -41,6 +41,7 @@ L.ButcherA = "Der Schlächter"
 L.SiegeTankA = "Sergeant Hammer"
 L.StitchesA = "Kleiner"
 L.TyraelMechaA = "Mecha-Tyrael"
+L.VanndarA = "Vanndar Sturmlanze"
 
 elseif locale == "esES" then
 
@@ -64,6 +65,7 @@ L.FenixA = "Fénix"
 L.SiegeTankA = "Sgto. Martillo"
 L.StitchesA = "Puntos"
 L.TyraelMechaA = "Mecatyrael"
+L.VanndarA = "Vanndar Pico Tormenta"
 
 elseif locale == "esMX" then
 
@@ -86,6 +88,7 @@ L.FenixA = "Fénix"
 L.SiegeTankA = "Sargento Maza"
 L.StitchesA = "Puntos"
 L.TyraelMechaA = "Mecatyrael"
+L.VanndarA = "Vanndar Pico Tormenta"
 
 elseif locale == "frFR" then
 
@@ -116,6 +119,7 @@ L.StitchesA = "Balafré"
 L.TyraelA = "Tyraël"
 L.TyraelMechaA = "Méca Tyraël"
 L.WitchDoctorA = "Nasibo"
+L.VanndarA = "Vanndar Foudrepique"
 
 elseif locale == "itIT" then
 
@@ -137,6 +141,7 @@ L.GazloweA = "Sparachiodi"
 L.MurkyA = "Fosky"
 L.StitchesA = "Tritacarne"
 L.TyraelMechaA = "Tyrael Mech"
+L.VanndarA = "Vanndar Piccatonante"
 
 elseif locale == "koKR" then
 
@@ -154,6 +159,7 @@ L.Arena = "투기장 아나운서"
 L.Blackheart = "블랙하트"
 L.Commodore = "포드 제독"
 L.Demon = "벨레스"
+L.DrekTharA = "드렉타르"
 L.GardensDayAnnouncer = "밤그늘 여왕"
 L.LadyofThorns = "가시의 여군주"
 L.LuchaA = "엘 구아포"
@@ -162,6 +168,7 @@ L.Necromancer = "묘지기"
 L.RavenLord = "까마귀 군주"
 L.SnakeGod = "카"
 L.SpiderQueen = "네이디스"
+L.VanndarA = "반다르 스톰파이크"
 L.VolskayaA = "볼스카야"
 
 L.Abathur = "아바투르"
@@ -201,6 +208,7 @@ L.TychusA = "타이커스"
 L.TyraelA = "티리엘"
 L.TyraelMechaA = "메카 티리엘"
 L.WitchDoctorA = "나지보"
+L.YrelA = "이렐"
 L.ZeratulA = "제라툴"
 
 elseif locale == "ptBR" then
@@ -225,6 +233,7 @@ L.SiegeTankA = "Sgt. Marreta"
 L.StitchesA = "Suturin"
 L.TyraelMechaA = "Meca-Tyrael"
 L.WitchDoctorA = "Nazibo"
+L.VanndarA = "Vandar Lançatroz"
 
 elseif locale == "ruRU" then
 
@@ -238,6 +247,7 @@ L.Arena = "Комментатор арены"
 L.Blackheart = "Черносерд"
 L.Commodore = "Командор Форд"
 L.Demon = "Белет"
+L.DrekTharA = "Дрек'Тар"
 L.GardensDayAnnouncer = "Королева Белладонна"
 L.LadyofThorns = "Королева Шипов"
 L.LuchaA = "Эль Гуапо"
@@ -246,6 +256,7 @@ L.Necromancer = "Могильщик"
 L.RavenLord = "Повелитель Воронов"
 L.SnakeGod = "Ка"
 L.SpiderQueen = "Неитис"
+L.VanndarA = "Вандар Грозовая Вершина"
 L.VolskayaA = "Вольская"
 
 L.Abathur = "Абатур"
@@ -285,6 +296,7 @@ L.TychusA = "Тайкус"
 L.TyraelA = "Тираэль"
 L.TyraelMechaA = "Меха Тираэль"
 L.WitchDoctorA = "Назибо"
+L.YrelA = "Ирель"
 L.ZeratulA = "Зератул"
 
 elseif locale == "zhCN" then
@@ -303,6 +315,7 @@ L.Arena = "竞技场播报员"
 L.Blackheart = "黑心船长"
 L.Commodore = "准将福特"
 L.Demon = "贝莱斯"
+L.DrekTharA = "德雷克塔尔"
 L.GardensDayAnnouncer = "龙葵女王"
 L.LadyofThorns = "荆棘女士"
 L.LuchaA = "摔霸"
@@ -311,6 +324,7 @@ L.Necromancer = "守墓人"
 L.RavenLord = "乌鸦之神"
 L.SnakeGod = "卡"
 L.SpiderQueen = "尼西斯"
+L.VanndarA = "范达尔·雷矛"
 L.VolskayaA = "沃斯卡娅"
 
 L.Abathur = "阿巴瑟"
@@ -350,6 +364,7 @@ L.TychusA = "泰凯斯"
 L.TyraelA = "泰瑞尔"
 L.TyraelMechaA = "机甲泰瑞尔"
 L.WitchDoctorA = "纳兹波"
+L.YrelA = "伊瑞尔"
 L.ZeratulA = "泽拉图"
 
 elseif locale == "zhTW" then
@@ -368,6 +383,7 @@ L.Arena = "競技場播報員"
 L.Blackheart = "黑心船長"
 L.Commodore = "福特准將"
 L.Demon = "貝雷斯"
+L.DrekTharA = "德雷克塔爾"
 L.GardensDayAnnouncer = "夜影女皇"
 L.LadyofThorns = "荊棘夫人"
 L.LuchaA = "摔霸"
@@ -376,6 +392,7 @@ L.Necromancer = "守墓者"
 L.RavenLord = "掠鴉王"
 L.SnakeGod = "卡"
 L.SpiderQueen = "涅希絲"
+L.VanndarA = "范達爾‧雷矛"
 L.VolskayaA = "伏斯凱亞"
 
 L.Abathur = "阿巴瑟"
@@ -415,6 +432,7 @@ L.TychusA = "泰科斯"
 L.TyraelA = "泰瑞爾"
 L.TyraelMechaA = "機甲泰瑞爾"
 L.WitchDoctorA = "納奇班"
+L.YrelA = "伊芮爾"
 L.ZeratulA = "澤拉圖"
 
 end

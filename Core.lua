@@ -123,12 +123,14 @@ local announcers = {
 	Athena = "Athena",
 	Blackheart = "Blackheart",
 	Demon = "Demon",
+	DrekTharA = "Drek'Thar",
 	GardensDayAnnouncer = "Queen Nightshade",
 	LadyofThorns = "Lady of Thorns",
 	Necromancer = "Necromancer",
 	RavenLord = "Raven Lord",
 	SnakeGod = "Snake God",
 	SpiderQueen = "Spider Queen",
+	VanndarA = "Vanndar Stormpike",
 	VolskayaA = "Volskaya",
 	-- Brawl
 	Arena = "Arena",
@@ -154,6 +156,7 @@ local announcers = {
 	MurkyA = "Murky",
 	RehgarAnnouncer = "Rehgar",
 	StitchesA = "Stitches",
+	YrelA = "Yrel",
 	-- StarCraft
 	Abathur = "Abathur",
 	AlarakA = "Alarak",
