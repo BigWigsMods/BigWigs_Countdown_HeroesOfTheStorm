@@ -15,7 +15,7 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
 
 - Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, E.T.C., Falstad,
   Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev, Malfurion,
-  Muradin, Murky, Rehgar, Stitches, Yrel
+  Muradin, Murky, Rehgar, Stitches, Whitemane, Yrel
 - StarCraft: Abathur, Alarak, Blaze, Fenix, Sgt. Hammer, Tassadar, Tychus,
   Zeratul
 - Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Nazeebo, Sonya, Tyrael,

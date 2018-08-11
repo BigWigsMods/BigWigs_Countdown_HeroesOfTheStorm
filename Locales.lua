@@ -42,6 +42,7 @@ L.SiegeTankA = "Sergeant Hammer"
 L.StitchesA = "Kleiner"
 L.TyraelMechaA = "Mecha-Tyrael"
 L.VanndarA = "Vanndar Sturmlanze"
+L.WhitemaneA = "Weißsträhne"
 
 elseif locale == "esES" then
 
@@ -66,6 +67,7 @@ L.SiegeTankA = "Sgto. Martillo"
 L.StitchesA = "Puntos"
 L.TyraelMechaA = "Mecatyrael"
 L.VanndarA = "Vanndar Pico Tormenta"
+L.WhitemaneA = "Melenablanca"
 
 elseif locale == "esMX" then
 
@@ -89,6 +91,7 @@ L.SiegeTankA = "Sargento Maza"
 L.StitchesA = "Puntos"
 L.TyraelMechaA = "Mecatyrael"
 L.VanndarA = "Vanndar Pico Tormenta"
+L.WhitemaneA = "Melenablanca"
 
 elseif locale == "frFR" then
 
@@ -120,6 +123,7 @@ L.TyraelA = "Tyraël"
 L.TyraelMechaA = "Méca Tyraël"
 L.WitchDoctorA = "Nasibo"
 L.VanndarA = "Vanndar Foudrepique"
+L.WhitemaneA = "Blanchetête"
 
 elseif locale == "itIT" then
 
@@ -142,6 +146,7 @@ L.MurkyA = "Fosky"
 L.StitchesA = "Tritacarne"
 L.TyraelMechaA = "Tyrael Mech"
 L.VanndarA = "Vanndar Piccatonante"
+L.WhitemaneA = "Biancachioma"
 
 elseif locale == "koKR" then
 
@@ -207,6 +212,7 @@ L.TassadarA = "태사다르"
 L.TychusA = "타이커스"
 L.TyraelA = "티리엘"
 L.TyraelMechaA = "메카 티리엘"
+L.WhitemaneA = "화이트메인"
 L.WitchDoctorA = "나지보"
 L.YrelA = "이렐"
 L.ZeratulA = "제라툴"
@@ -234,6 +240,7 @@ L.StitchesA = "Suturin"
 L.TyraelMechaA = "Meca-Tyrael"
 L.WitchDoctorA = "Nazibo"
 L.VanndarA = "Vandar Lançatroz"
+L.WhitemaneA = "Cristalba"
 
 elseif locale == "ruRU" then
 
@@ -295,6 +302,7 @@ L.TassadarA = "Тассадар"
 L.TychusA = "Тайкус"
 L.TyraelA = "Тираэль"
 L.TyraelMechaA = "Меха Тираэль"
+L.WhitemaneA = "Вайтмейн"
 L.WitchDoctorA = "Назибо"
 L.YrelA = "Ирель"
 L.ZeratulA = "Зератул"
@@ -363,6 +371,7 @@ L.TassadarA = "塔萨达尔"
 L.TychusA = "泰凯斯"
 L.TyraelA = "泰瑞尔"
 L.TyraelMechaA = "机甲泰瑞尔"
+L.WhitemaneA = "怀特迈恩"
 L.WitchDoctorA = "纳兹波"
 L.YrelA = "伊瑞尔"
 L.ZeratulA = "泽拉图"
@@ -431,6 +440,7 @@ L.TassadarA = "塔薩達"
 L.TychusA = "泰科斯"
 L.TyraelA = "泰瑞爾"
 L.TyraelMechaA = "機甲泰瑞爾"
+L.WhitemaneA = "懷特邁恩"
 L.WitchDoctorA = "納奇班"
 L.YrelA = "伊芮爾"
 L.ZeratulA = "澤拉圖"

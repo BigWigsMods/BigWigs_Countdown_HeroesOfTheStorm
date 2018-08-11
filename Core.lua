@@ -156,6 +156,7 @@ local announcers = {
 	MurkyA = "Murky",
 	RehgarAnnouncer = "Rehgar",
 	StitchesA = "Stitches",
+	WhitemaneA = "Whitemane",
 	YrelA = "Yrel",
 	-- StarCraft
 	Abathur = "Abathur",
