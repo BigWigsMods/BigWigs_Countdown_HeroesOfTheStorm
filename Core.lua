@@ -194,7 +194,7 @@ function ns.RegisterVoices()
 	local path = "Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\%s\\%s_Countdown%dsec00.ogg"
 
 	for k, v in next, announcers do
-		local id = ("%s: %s: %s"):format(lang, "Heroes of the Storm", v) -- should be using k but I don't want to break everything D;
+		local id = ("%s: Heroes of the Storm: %s"):format(lang, v) -- should be using k but I don't want to break everything D;
 		local name = L.key:format(lang, L.heroes, L[k] or v)
 		BigWigsAPI:RegisterCountdown(id, name, {
 			path:format(locale, k, 1),
@@ -208,7 +208,7 @@ function ns.RegisterVoices()
 	-- Special case Butcher (It's just grunts and growls)
 	-- This is reversed from HotS so 2/1 are the more distinctive sounds
 	local k, v = "ButcherA", "Butcher"
-	local id = ("%s: %s"):format("Heroes of the Storm", v)
+	local id = ("Heroes of the Storm: %s"):format(v)
 	if not BigWigsAPI:HasCountdown(id) then
 		BigWigsAPI:RegisterCountdown(id, L.key_short:format(L.heroes, L[k] or v), {
 			"Interface\\AddOns\\BigWigs_Countdown_HeroesOfTheStorm\\enUS\\ButcherA_DismissBark02.ogg",
@@ -221,7 +221,7 @@ function ns.RegisterVoices()
 
 	-- Special case El Guapo (Spanish for all locales)
 	local k, v = "LuchaA", "El Guapo"
-	local id = ("%s: %s"):format("Heroes of the Storm", v)
+	local id = ("Heroes of the Storm: %s"):format(v)
 	if not BigWigsAPI:HasCountdown(id) then
 		BigWigsAPI:RegisterCountdown(id, L.key_short:format(L.heroes, L[k] or v), {
 			path:format("enUS", k, 1),
