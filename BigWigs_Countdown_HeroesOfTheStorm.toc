@@ -13,6 +13,8 @@
 ## Author: Neb
 ## Version: @project-version@
 ## Dependencies: BigWigs
+## LoadOnDemand: 1
+## X-BigWigs-LoadOn-CoreEnabled: 1
 
 Locales.lua
 Core.lua

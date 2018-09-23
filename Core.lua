@@ -1,16 +1,12 @@
--- luacheck: globals BigWigs BigWigs3DB BigWigsAPI BigWigsLoader
+-- luacheck: globals BigWigs BigWigsAPI
 
 local _, ns = ...
 
 -------------------------------------------------------------------------------
--- Locale
+-- Locals
 --
 
 local L = ns.L
-
--------------------------------------------------------------------------------
--- Locals
---
 
 local localeMap = {
 	enUS = "English",
@@ -32,84 +28,57 @@ end
 
 local loaded = {}
 
-local db = {}
--- Upvalue the plugin db from it's SavedVars directly since the plugin can't be loaded until BigWigs_Core is
-if BigWigs3DB and BigWigs3DB.profileKeys and BigWigs3DB.namespaces and BigWigs3DB.namespaces.BigWigs_Plugins_HeroesVoices and BigWigs3DB.namespaces.BigWigs_Plugins_HeroesVoices.profiles then
-	local name, realm = UnitName("player"), GetRealmName()
-	if name and realm then
-		local profile = BigWigs3DB.profileKeys[name.." - "..realm]
-		local profiles = BigWigs3DB.namespaces.BigWigs_Plugins_HeroesVoices.profiles
-		if profile and profiles[profile] then
-			db = profiles[profile]
-		end
-	end
-end
-
 -------------------------------------------------------------------------------
 -- Options
 --
 
-function ns.RegisterPlugin(event)
-	BigWigsLoader.UnregisterMessage(ns, event)
+local plugin = BigWigs:NewPlugin("HeroesVoices")
+if not plugin then return end
 
-	local plugin = BigWigs:NewPlugin("HeroesVoices")
-	if not plugin then return end
+plugin.defaultDB = {
+	locale = defaultLocale
+}
 
-	plugin.defaultDB = {
-		locale = defaultLocale
-	}
-
-	plugin.subPanelOptions = {
-		key = "Big Wigs: Voice: Heroes of the Storm",
+plugin.subPanelOptions = {
+	key = "Big Wigs: Voice: Heroes of the Storm",
+	name = L.title,
+	options = {
 		name = L.title,
-		options = {
-			name = L.title,
-			type = "group",
-			args = {
-				locale = {
-					name = L.language,
-					type = "select",
-					values = localeMap,
-					get = function() return db.locale end,
-					set = function(_, value)
-						db.locale = value
-						ns.RegisterVoices()
-					end,
-					order = 2,
-				},
-				notice = {
-					name = "\n" .. L.locale_warning,
-					type = "description",
-					hidden = function()
-						local count = 0
-						for _ in next, loaded do
-							count = count + 1
-						end
-						if count == 1 then
-							return true
-						end
-					end,
-					order = 3,
-				},
+		type = "group",
+		args = {
+			locale = {
+				name = L.language,
+				type = "select",
+				values = localeMap,
+				get = function()
+					return plugin.db.profile.locale
+				end,
+				set = function(_, value)
+					plugin.db.profile.locale = value
+					ns.RegisterVoices()
+				end,
+				order = 2,
+			},
+			notice = {
+				name = "\n" .. L.locale_warning,
+				type = "description",
+				hidden = function()
+					local count = 0
+					for _ in next, loaded do
+						count = count + 1
+					end
+					if count == 1 then
+						return true
+					end
+				end,
+				order = 3,
 			},
 		},
-	}
+	},
+}
 
-	local function profileUpdate()
-		db = plugin.db.profile
-	end
-	function plugin:OnEnable()
-		self:RegisterMessage("BigWigs_ProfileUpdate", profileUpdate)
-		profileUpdate()
-	end
-
-	-- Force initialization since the addon is already loaded
-	BigWigs.ADDON_LOADED()
-end
-
-BigWigsLoader.RegisterMessage(ns, "BigWigs_CoreEnabled", ns.RegisterPlugin)
-if BigWigs and BigWigs:IsEnabled() then
-	ns.RegisterPlugin("BigWigs_CoreEnabled")
+function plugin:OnRegister()
+	ns.RegisterVoices()
 end
 
 -------------------------------------------------------------------------------
@@ -186,7 +155,7 @@ local announcers = {
 }
 
 function ns.RegisterVoices()
-	local locale = db.locale or defaultLocale
+	local locale = plugin.db.profile.locale
 	if loaded[locale] then return end
 
 	loaded[locale] = true
@@ -233,5 +202,3 @@ function ns.RegisterVoices()
 		})
 	end
 end
-
-ns.RegisterVoices()
