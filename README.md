@@ -21,7 +21,7 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
 - Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Mephisto, Nazeebo, Sonya,
   Tyrael, Valla
 - Overwatch: D.Va, Genji, Hanzo, Junkrat
-- Nexus: Mecha Tyrael
+- Nexus: Mecha Tyrael, Orphea
 
 ## Map announcers
 
@@ -44,6 +44,10 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
 - Commodore Ford
 - Mira Han (Deadman's Stand)
 - El Guapo (Nexomania)
+
+## Caster/Staff announcers
+
+- Cloaken
 
 ## Download
 
