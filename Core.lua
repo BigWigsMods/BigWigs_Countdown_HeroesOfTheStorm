@@ -101,11 +101,12 @@ local announcers = {
 	SpiderQueen = "Spider Queen",
 	VanndarA = "Vanndar Stormpike",
 	VolskayaA = "Volskaya",
-	-- Brawl
+	-- Brawl/Event
 	Arena = "Arena",
 	Commodore = "Commodore",
 	-- LuchaA = "El Guapo", -- same for all languages
 	MiraA = "Mira Han",
+	Toy18A = "\"The Kid\"",
 	-- Warcraft
 	AlexstraszaA = "Alexstrasza",
 	AnubarakAnnouncer = "Anub'arak",
@@ -121,6 +122,7 @@ local announcers = {
 	LiLiA = "Li Li",
 	MaievA = "Maiev",
 	MalfurionA = "Malfurion",
+	MalganisA = "Mal'Ganis",
 	MuradinA = "Muradin",
 	MurkyA = "Murky",
 	RehgarAnnouncer = "Rehgar",
@@ -154,7 +156,7 @@ local announcers = {
 	TyraelMechaA = "Mecha Tyrael",
 	-- Nexus
 	OrpheaA = "Orphea",
-	-- Casters
+	-- Misc
 	-- CloakenA = "Cloaken", -- same for all languages
 }
 
