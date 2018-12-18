@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80100
 ## Title: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-deDE: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-esES: BigWigs |cffff7f3f+|r|cffffffffCuenta Atrás: Heroes of the Storm|r
