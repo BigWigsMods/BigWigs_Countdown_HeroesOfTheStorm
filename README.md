@@ -18,8 +18,8 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
   Mal'Ganis, Muradin, Murky, Rehgar, Stitches, Whitemane, Yrel
 - StarCraft: Abathur, Alarak, Blaze, Fenix, Sgt. Hammer, Tassadar, Tychus,
   Zeratul
-- Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Mephisto, Nazeebo, Sonya,
-  Tyrael, Valla
+- Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Imperius, Mephisto,
+  Nazeebo, Sonya, Tyrael, Valla
 - Overwatch: D.Va, Genji, Hanzo, Junkrat
 - Nexus: Mecha Tyrael, Orphea
 

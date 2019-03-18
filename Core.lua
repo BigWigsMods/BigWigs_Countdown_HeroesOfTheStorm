@@ -142,6 +142,7 @@ local announcers = {
 	-- ButcherA = "Butcher", -- same for all languages
 	DiabloA = "Diablo",
 	DeckardA = "Deckard Cain",
+	ImperiusA = "Imperius",
 	MephistoA = "Mephisto",
 	WitchDoctorA = "Nazeebo",
 	BarbarianA = "Sonya",
