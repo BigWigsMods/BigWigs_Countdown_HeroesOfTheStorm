@@ -109,6 +109,7 @@ local announcers = {
 	Toy18A = "\"The Kid\"",
 	-- Warcraft
 	AlexstraszaA = "Alexstrasza",
+	AnduinA = "Anduin",
 	AnubarakAnnouncer = "Anub'arak",
 	ArthasA = "Arthas",
 	BrightwingA = "Brightwing",
