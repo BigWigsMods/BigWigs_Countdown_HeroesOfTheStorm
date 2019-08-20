@@ -155,6 +155,7 @@ local announcers = {
 	-- Skins
 	TyraelMechaA = "Mecha Tyrael",
 	-- Nexus
+	NexusHunterA = "Qhira",
 	OrpheaA = "Orphea",
 }
 
