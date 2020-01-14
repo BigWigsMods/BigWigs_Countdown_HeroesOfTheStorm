@@ -112,6 +112,7 @@ local announcers = {
 	AnubarakAnnouncer = "Anub'arak",
 	ArthasA = "Arthas",
 	BrightwingA = "Brightwing",
+	DeathwingA = "Deathwing",
 	ETCA = "E.T.C.",
 	FalstadA = "Falstad",
 	GarroshA = "Garrosh",
