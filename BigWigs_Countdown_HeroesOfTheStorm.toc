@@ -2,7 +2,7 @@
 ## Title: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-deDE: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-esES: BigWigs |cffff7f3f+|r|cffffffffCuenta Atrás: Heroes of the Storm|r
-## Title-esEX: BigWigs |cffff7f3f+|r|cffffffffCuenta Atrás: Heroes of the Storm|r
+## Title-esMX: BigWigs |cffff7f3f+|r|cffffffffCuenta Atrás: Heroes of the Storm|r
 ## Title-frFR: BigWigs |cffff7f3f+|r|cffffffffCompte à rebours : Heroes of the Storm|r
 ## Title-itIT: BigWigs |cffff7f3f+|r|cffffffffConto alla Rovescia: Heroes of the Storm|r
 ## Title-koKR: BigWigs |cffff7f3f+|r|cffffffff초읽기 : 히어로즈 오브 더 스톰|r
