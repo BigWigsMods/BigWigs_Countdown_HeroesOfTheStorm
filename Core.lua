@@ -153,6 +153,7 @@ local announcers = {
 	GenjiA = "Genji",
 	HanzoA = "Hanzo",
 	JunkratA = "Junkrat",
+	MeiOWA = "Mei",
 	-- Skins
 	TyraelMechaA = "Mecha Tyrael",
 	-- Nexus

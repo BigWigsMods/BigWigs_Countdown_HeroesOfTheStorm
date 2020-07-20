@@ -20,7 +20,7 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
   Zeratul
 - Diablo: Butcher (nonverbal), Deckard Cain, Diablo, Imperius, Mephisto,
   Nazeebo, Sonya, Tyrael, Valla
-- Overwatch: D.Va, Genji, Hanzo, Junkrat
+- Overwatch: D.Va, Genji, Hanzo, Junkrat, Mei
 - Nexus: Mecha Tyrael, Orphea, Qhira
 
 ## Map announcers
