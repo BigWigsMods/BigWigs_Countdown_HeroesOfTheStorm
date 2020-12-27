@@ -117,6 +117,7 @@ local announcers = {
 	FalstadA = "Falstad",
 	GarroshA = "Garrosh",
 	GazloweA = "Gazlowe",
+	HoggerA = "Hogger",
 	IllidanA = "Illidan",
 	JainaA = "Jaina",
 	KelthuzadA = "Kel'Thuzad",

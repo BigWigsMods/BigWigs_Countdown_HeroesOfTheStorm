@@ -14,7 +14,7 @@ in that ability's "Sounds" tab or change the pull timer countdown voice in
 ## Hero announcers
 
 - Warcraft: Alexstrasza, Anub'arak, Arthas, Brightwing, Deathwing, E.T.C.,
-  Falstad, Garrosh, Gazlowe, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev,
+  Falstad, Garrosh, Gazlowe, Hogger, Illidan, Jaina, Kel'Thuzad, Li Li, Maiev,
   Malfurion, Mal'Ganis, Muradin, Murky, Rehgar, Stitches, Whitemane, Yrel
 - StarCraft: Abathur, Alarak, Blaze, Fenix, Sgt. Hammer, Tassadar, Tychus,
   Zeratul
