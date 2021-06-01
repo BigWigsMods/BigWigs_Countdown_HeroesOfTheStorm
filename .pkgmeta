@@ -1,4 +1,5 @@
 package-as: BigWigs_Countdown_HeroesOfTheStorm
 
 ignore:
-  - README.md
+  - BigWigs_Countdown_HeroesOfTheStorm-Classic.toc
+  - BigWigs_Countdown_HeroesOfTheStorm-BCC.toc

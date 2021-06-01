@@ -1,0 +1,42 @@
+name: Package addon
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  CF_API_KEY: ${{ secrets.CF_API_KEY }}
+  WOWI_API_TOKEN: ${{ secrets.WOWI_API_TOKEN }}
+  GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout addon
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 10
+
+      # 200 mb in uploads every release! subarashii
+      - name: Package Classic
+        uses: BigWigsMods/packager@master
+        with:
+          args: -p 89683 -g classic
+
+      - name: Package BCC
+        uses: BigWigsMods/packager@master
+        with:
+          args: -p 89683 -g bcc
+
+      - name: Package Retail
+        uses: BigWigsMods/packager@master
+        with:
+          args: -p 89683 -g retail
+
+      - name: Package WoWI
+        uses: BigWigsMods/packager@master
+        with:
+          args: -w 26065 -g 1.13.7,2.5.1,9.0.5 -m .pkgmeta-wowi
