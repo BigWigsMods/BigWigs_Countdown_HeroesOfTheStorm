@@ -1,6 +1,6 @@
-## Interface: 90100
-## Interface-BCC: 20501
-## Interface-Classic: 11307
+## Interface: 90200
+## Interface-BCC: 20504
+## Interface-Classic: 11402
 ## Title: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-deDE: BigWigs |cffff7f3f+|r|cffffffffCountdown: Heroes of the Storm|r
 ## Title-esES: BigWigs |cffff7f3f+|r|cffffffffCuenta Atrás: Heroes of the Storm|r
