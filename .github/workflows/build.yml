@@ -20,23 +20,5 @@ jobs:
         with:
           fetch-depth: 10
 
-      # 200 mb in uploads every release! subarashii
-      - name: Package Classic
+      - name: Package
         uses: BigWigsMods/packager@master
-        with:
-          args: -p 89683 -g classic
-
-      - name: Package BCC
-        uses: BigWigsMods/packager@master
-        with:
-          args: -p 89683 -g bcc
-
-      - name: Package Retail
-        uses: BigWigsMods/packager@master
-        with:
-          args: -p 89683 -g retail
-
-      - name: Package WoWI
-        uses: BigWigsMods/packager@master
-        with:
-          args: -w 26065 -g 1.13.7,2.5.1,9.0.5 -m .pkgmeta-wowi
