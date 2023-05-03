@@ -13,6 +13,7 @@
 ## Title-ruRU: BigWigs |cffff7f3f+|r|cffffffffОбратный отсчет: Heroes of the Storm|r
 ## Title-zhCN: BigWigs |cffff7f3f+|r|cffffffff倒数：风暴英雄|r
 ## Title-zhTW: BigWigs |cffff7f3f+|r|cffffffff倒數：暴雪英霸|r
+## IconTexture: Interface\AddOns\BigWigs\Media\Icons\core-enabled
 ## Author: Neb
 ## Version: @project-version@
 ## Dependencies: BigWigs
