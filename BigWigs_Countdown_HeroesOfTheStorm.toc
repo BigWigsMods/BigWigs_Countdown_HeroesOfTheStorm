@@ -21,6 +21,7 @@
 ## X-BigWigs-LoadOn-CoreEnabled: 1
 ## X-Curse-Project-ID: 89683
 ## X-WoWI-ID: 26065
+## X-Wago-ID: YK9E8lKL
 
 Locales.lua
 Core.lua
