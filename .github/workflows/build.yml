@@ -14,6 +14,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    concurrency:
+        group: packager
 
     steps:
       - name: Checkout addon
