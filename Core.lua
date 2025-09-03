@@ -1,6 +1,6 @@
--- luacheck: globals BigWigs BigWigsAPI
+-- luacheck: globals BigWigs BigWigsAPI BWCHeroesOfTheStormDB
 
-local _, ns = ...
+local addonName, ns = ...
 
 -------------------------------------------------------------------------------
 -- Locals
@@ -32,54 +32,39 @@ local loaded = {}
 -- Options
 --
 
-local plugin = BigWigs:NewPlugin("HeroesVoices")
-if not plugin then return end
-
-plugin.defaultDB = {
-	locale = defaultLocale
-}
-
-plugin.subPanelOptions = {
-	key = "Big Wigs: Voice: Heroes of the Storm",
+BigWigsAPI.RegisterPluginOptions("BigWigs: Voice: Heroes of the Storm", {
 	name = L.title,
-	options = {
-		name = L.title,
-		type = "group",
-		args = {
-			locale = {
-				name = L.language,
-				type = "select",
-				values = localeMap,
-				get = function()
-					return plugin.db.profile.locale
-				end,
-				set = function(_, value)
-					plugin.db.profile.locale = value
-					ns.RegisterVoices()
-				end,
-				order = 2,
-			},
-			notice = {
-				name = "\n" .. L.locale_warning,
-				type = "description",
-				hidden = function()
-					local count = 0
-					for _ in next, loaded do
-						count = count + 1
-					end
-					if count == 1 then
-						return true
-					end
-				end,
-				order = 3,
-			},
+	type = "group",
+	args = {
+		locale = {
+			name = L.language,
+			type = "select",
+			values = localeMap,
+			get = function()
+				return BWCHeroesOfTheStormDB
+			end,
+			set = function(_, value)
+				BWCHeroesOfTheStormDB = value
+				ns.RegisterVoices()
+			end,
+			order = 2,
+		},
+		notice = {
+			name = "\n" .. L.locale_warning,
+			type = "description",
+			hidden = function()
+				local count = 0
+				for _ in next, loaded do
+					count = count + 1
+				end
+				if count == 1 then
+					return true
+				end
+			end,
+			order = 3,
 		},
 	},
-}
-
-function plugin:OnRegister()
-	ns.RegisterVoices()
-end
+})
 
 -------------------------------------------------------------------------------
 -- Registration
@@ -169,7 +154,7 @@ local snowflakes = {
 }
 
 function ns.RegisterVoices()
-	local locale = plugin.db.profile.locale
+	local locale = BWCHeroesOfTheStormDB
 	if loaded[locale] then return end
 
 	loaded[locale] = true
@@ -201,4 +186,28 @@ function ns.RegisterVoices()
 			})
 		end
 	end
+end
+
+if not BigWigsLoader.isVanilla then -- XXX Support for LoadSavedVariablesFirst [Mainline:✓ MoP:✓ Wrath:✓ Vanilla:✗]
+	if type(BWCHeroesOfTheStormDB) ~= "string" or not localeMap[BWCHeroesOfTheStormDB] then
+		BWCHeroesOfTheStormDB = defaultLocale
+	end
+
+	ns.RegisterVoices()
+else
+	local f = CreateFrame("Frame")
+	f:RegisterEvent("ADDON_LOADED")
+	f:SetScript("OnEvent", function(self, event, addon)
+		if addon ~= addonName then
+			return
+		end
+		self:UnregisterEvent(event)
+		self:SetScript("OnEvent", nil)
+
+		if type(BWCHeroesOfTheStormDB) ~= "string" or not localeMap[BWCHeroesOfTheStormDB] then
+			BWCHeroesOfTheStormDB = defaultLocale
+		end
+
+		ns.RegisterVoices()
+	end)
 end

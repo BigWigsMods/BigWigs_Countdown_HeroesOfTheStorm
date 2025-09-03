@@ -13,9 +13,9 @@
 ## IconTexture: Interface\AddOns\BigWigs\Media\Icons\core-enabled
 ## Author: Neb
 ## Version: @project-version@
+## SavedVariables: BWCHeroesOfTheStormDB
+## LoadSavedVariablesFirst: 1
 ## Dependencies: BigWigs
-## LoadOnDemand: 1
-## X-BigWigs-LoadOn-CoreEnabled: 1
 ## X-Curse-Project-ID: 89683
 ## X-WoWI-ID: 26065
 ## X-Wago-ID: YK9E8lKL
