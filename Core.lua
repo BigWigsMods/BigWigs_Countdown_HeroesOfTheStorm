@@ -1,6 +1,10 @@
 -- luacheck: globals BigWigs BigWigsAPI BWCHeroesOfTheStormDB
 
-local addonName, ns = ...
+local ns
+do
+	local _
+	 _, ns = ...
+end
 
 -------------------------------------------------------------------------------
 -- Locals
@@ -188,26 +192,8 @@ function ns.RegisterVoices()
 	end
 end
 
-if not BigWigsLoader.isVanilla then -- XXX Support for LoadSavedVariablesFirst [Mainline:✓ MoP:✓ Wrath:✓ Vanilla:✗]
-	if type(BWCHeroesOfTheStormDB) ~= "string" or not localeMap[BWCHeroesOfTheStormDB] then
-		BWCHeroesOfTheStormDB = defaultLocale
-	end
-
-	ns.RegisterVoices()
-else
-	local f = CreateFrame("Frame")
-	f:RegisterEvent("ADDON_LOADED")
-	f:SetScript("OnEvent", function(self, event, addon)
-		if addon ~= addonName then
-			return
-		end
-		self:UnregisterEvent(event)
-		self:SetScript("OnEvent", nil)
-
-		if type(BWCHeroesOfTheStormDB) ~= "string" or not localeMap[BWCHeroesOfTheStormDB] then
-			BWCHeroesOfTheStormDB = defaultLocale
-		end
-
-		ns.RegisterVoices()
-	end)
+if type(BWCHeroesOfTheStormDB) ~= "string" or not localeMap[BWCHeroesOfTheStormDB] then
+	BWCHeroesOfTheStormDB = defaultLocale
 end
+
+ns.RegisterVoices()
